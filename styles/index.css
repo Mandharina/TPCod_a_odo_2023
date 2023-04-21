@@ -1,20 +1,23 @@
-a{
+a {
     text-decoration: none;
-    color:black ;
-    font-size:x-large;
+    color: black;
+    font-size: x-large;
+    text-shadow: 4px 4px 5px #0005;
 }
+
 a:hover {
     background: #68B984;
-    padding: 20px;
-    
+
+
 }
+
 .contenedor {
     display: grid;
-    grid-template: auto auto auto auto auto  / auto auto;
+    grid-template: auto auto auto auto auto / auto auto;
     grid-template-areas:
         "header header"
         "nav nav"
-        
+
         "article article"
         "section section"
         "footer footer";
@@ -27,6 +30,7 @@ a:hover {
     grid-template-columns: 30% 70%;
     grid-area: header;
     background-color: #FED049;
+    background: linear-gradient(90deg, rgba(254,208,73,1) 0%, rgba(185,140,8,1) 100%);
 
 }
 
@@ -34,7 +38,6 @@ a:hover {
     font-family: 'Zeyada', cursive;
     font-size: 130px;
     text-align: center;
-
 }
 
 .nav {
@@ -45,14 +48,16 @@ a:hover {
     margin-top: 5px;
 
 }
+
 .nav-it {
     padding: 20px;
     font-family: 'Cabin', sans-serif;
     font-size: 20px;
     text-align: center;
-  
+
 }
-.article{
+
+.article {
     display: grid;
     grid-template-columns: auto auto;
     grid-area: article;
@@ -60,12 +65,26 @@ a:hover {
     padding: 10px;
     margin-top: 5px;
 }
-.nota{
+
+.nota {
     font-family: 'Cabin', sans-serif;
-    text-align:justify;
+    text-align: justify;
     background-color: #68B984;
     padding: 10px;
     margin: 10px;
+    border-radius: 1%;
+}
+.img-nota-left {
+        float: left; 
+        padding: 10px; 
+        border-radius: 7%;
+    
+}
+.img-nota-right {
+    float: right; 
+    padding: 10px; 
+    border-radius: 7%;
+
 }
 .section {
     grid-area: section;
