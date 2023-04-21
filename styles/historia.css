@@ -1,0 +1,22 @@
+.contenedor {
+    display: grid;
+    grid-template: auto auto / auto ;
+    grid-template-areas:
+        "title"
+        "article"
+}
+.title{
+    grid-area: title;
+    background-color: #FED049;
+    font-family: 'Zeyada', cursive;
+    font-size: 70px;
+    padding: 10px;
+}
+.article{
+    grid-area: article;
+    font-family: 'Cabin', sans-serif;
+    text-align:justify;
+    background-color: #68B984;
+    padding: 10px;
+    margin-top:5px ;
+}
