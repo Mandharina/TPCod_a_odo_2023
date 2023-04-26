@@ -1,13 +1,15 @@
 .contenedor {
     display: grid;
-    grid-template: auto auto / auto ;
+    grid-template: auto auto auto/ 35% 35% 30%;
     grid-template-areas:
-        "title"
-        "article"
+        "header header header"
+        "article1 article1 article3"
+        "article4 article2 article2"
+        
+        
 }
-.title{
-    grid-area: title;
-    background-color: #FED049;
+.header{
+    grid-area: header;
     background: linear-gradient(90deg, rgba(254,208,73,1) 0%, rgba(185,140,8,1) 100%);
     font-family: 'Zeyada', cursive;
     font-size: 70px;
@@ -15,12 +17,77 @@
     text-align: right;
     line-height:120%;
     text-shadow: 4px 4px 5px #0005;
+    margin: 5px;
 }
-.article{
-    grid-area: article;
+.article1{
+    grid-area: article1;
+    
     font-family: 'Cabin', sans-serif;
     text-align:justify;
     background-color: #68B984;
     padding: 10px;
-    margin-top:5px ;
+    margin:5px;
+    border-radius: 0%;
+    
+}
+.article2{
+    grid-area: article2;
+    
+    font-family: 'Cabin', sans-serif;
+    text-align:justify;
+    background-color: #68B984;
+    padding: 10px;
+    margin:5px ;
+}
+.article3{
+    grid-area: article3;
+    
+    font-family: 'Cabin', sans-serif;
+    text-align:justify;
+    background-color: #68B984;
+    padding: 10px;
+    margin:5px ;
+}
+.article4{
+    grid-area: article4;
+    
+    font-family: 'Cabin', sans-serif;
+    text-align:justify;
+    background-color: #68B984;
+    padding: 10px;
+    margin:5px;
+    border-radius: 0%;
+}
+.img-article {
+    width: 30%;
+    float: left; 
+    padding: 10px; 
+    border-radius: 7%;
+}
+.img-side {
+    width: 60%;
+    float: left; 
+    padding: 10px; 
+    border-radius: 7%;
+}
+@media screen and (max-width: 768px){
+	.contenedor {
+		grid-template: auto auto auto auto/ auto;
+        grid-template-areas: 
+        "header"
+        "article1"
+        "article2"
+        "article3"
+        "article4"
+	}
+    .img-article {
+        width: 90%;         
+        border-radius: 7%;
+        margin: 5%;
+    }
+    .img-side {
+        width: 90%;         
+        border-radius: 7%;
+        margin: 5%;
+    }
 }
