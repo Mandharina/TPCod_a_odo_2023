@@ -4,13 +4,17 @@ a {
     font-size: x-large;
     text-shadow: 4px 4px 5px #0005;
 }
+button{
+    border: none;
+    background-color:#CFFDE1;
+}
 
-a:hover {
+/**a:hover {
     background: #68B984;
 
 
 }
-
+**/
 .contenedor {
     display: grid;
     grid-template: auto auto auto auto auto / auto auto;
