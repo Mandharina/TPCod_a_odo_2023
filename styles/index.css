@@ -4,9 +4,10 @@ a {
     font-size: x-large;
     text-shadow: 4px 4px 5px #0005;
 }
-button{
+
+button {
     border: none;
-    background-color:#CFFDE1;
+    background-color: #CFFDE1;
 }
 
 /**a:hover {
@@ -33,7 +34,7 @@ button{
     grid-template-columns: 30% 70%;
     grid-area: header;
     background-color: #FED049;
-    background: linear-gradient(90deg, rgba(254,208,73,1) 0%, rgba(185,140,8,1) 100%);
+    background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
 
 }
 
@@ -52,13 +53,24 @@ button{
 
 }
 
+.text {
+    opacity: 0;
+
+}
+
 .nav-it {
     padding: 20px;
     font-family: 'Cabin', sans-serif;
     font-size: 20px;
     text-align: center;
 
+
 }
+
+.nav:hover .text {
+    opacity: 1;
+}
+
 
 .article {
     display: grid;
@@ -77,26 +89,32 @@ button{
     margin: 10px;
     border-radius: 1%;
 }
+
 .img-nota-left {
-        float: left; 
-        padding: 10px; 
-        border-radius: 7%;
-        
-    
+    float: left;
+    padding: 10px;
+    border-radius: 7%;
+
+
 }
+
 .img-nota-right {
-    float: right; 
-    padding: 10px; 
+    float: right;
+    padding: 10px;
     border-radius: 7%;
 
 }
+
 .section {
     grid-area: section;
     background-color: #CFFDE1;
-    padding: 10px;
+    padding: 15px;
     margin-top: 5px;
 
+
 }
+
+.form {}
 
 .footer {
     grid-area: footer;
