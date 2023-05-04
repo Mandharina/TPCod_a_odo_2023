@@ -73,6 +73,7 @@
 
 }
 
+/*de aqui en adelante codigo para hacer la pagina responsiva*/
 @media screen and (max-width:720px) {
     .header {
         display: grid;
@@ -96,7 +97,7 @@
         padding: 10px;
         margin-top: 5px;
     }
-    
+}
 
 @media screen and (max-width:480px) {
     .header {
@@ -128,3 +129,4 @@
         padding: 10px;
         margin-top: 5px;
     }
+}

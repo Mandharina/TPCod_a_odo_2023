@@ -122,6 +122,7 @@ button {
     margin-top: 5px;
 }
 
+/*de aqui en adelante codigo para hacer la pagina responsiva*/
 @media screen and (max-width:720px) {
     .header {
         display: grid;
@@ -145,7 +146,7 @@ button {
         padding: 10px;
         margin-top: 5px;
     }
-    
+}
 
 @media screen and (max-width:480px) {
     .header {
@@ -177,3 +178,4 @@ button {
         padding: 10px;
         margin-top: 5px;
     }
+}
