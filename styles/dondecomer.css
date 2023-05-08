@@ -20,11 +20,16 @@
     line-height:120%;
     text-shadow: 4px 4px 5px #0005;
     margin: 5px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+   
 }
 .restaurante {
     display: grid;
     grid-template-columns: auto auto;
     grid-area: restaurante;
+    font-family: 'Cabin', sans-serif;
+    font-size:large;
     background-color: #3D5656;
     padding: 10px;
     margin-top: 5px;
@@ -33,6 +38,8 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-area: confiterias;
+    font-family: 'Cabin', sans-serif;
+    font-size:large;
     background-color: #3D5656;
     padding: 10px;
     margin-top: 5px;
@@ -87,6 +94,8 @@
         display: grid;
         grid-template-columns: auto;
         grid-area: restaurante;
+        font-family: 'Cabin', sans-serif;
+        font-size:large;
         background-color: #3D5656;
         padding: 10px;
         margin-top: 5px;
@@ -95,6 +104,8 @@
         display: grid;
         grid-template-columns: auto;
         grid-area: confiterias;
+        font-family: 'Cabin', sans-serif;
+        font-size:large;
         background-color: #3D5656;
         padding: 10px;
         margin-top: 5px;
