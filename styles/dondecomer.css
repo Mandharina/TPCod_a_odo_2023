@@ -6,7 +6,9 @@
         "tituloR tituloR"
         "restaurante restaurante"
         "tituloC tituloC"
-        "confiterias confiterias";
+        "confiterias confiterias"
+        "tituloH tituloH"
+        "heladerias heladerias";
 
 
 }
@@ -28,7 +30,6 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-area: restaurante;
-    font-family: 'Cabin', sans-serif;
     font-size:large;
     background-color: #3D5656;
     padding: 10px;
@@ -38,7 +39,15 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-area: confiterias;
-    font-family: 'Cabin', sans-serif;
+    font-size:large;
+    background-color: #3D5656;
+    padding: 10px;
+    margin-top: 5px;
+}
+.heladerias{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-area: heladerias;
     font-size:large;
     background-color: #3D5656;
     padding: 10px;
@@ -74,6 +83,16 @@
     margin:5px;
     border-radius: 0%;
 }
+.tituloH {
+   
+    font-family: 'Cabin', sans-serif;
+    text-align:justify;
+    background-color: #CFFDE1;
+    grid-area: tituloC;
+    padding: 10px;
+    margin:5px;
+    border-radius: 0%;
+}
 .img-dondec{
     float:left; 
     padding: 10px; 
@@ -88,14 +107,16 @@
         "tituloR"
         "restaurante"
         "tituloC"
-        "confiterias";
+        "confiterias"
+        "tituloH"
+        "heladerias";
 	}
     .restaurante {
         display: grid;
         grid-template-columns: auto;
         grid-area: restaurante;
         font-family: 'Cabin', sans-serif;
-        font-size:large;
+        
         background-color: #3D5656;
         padding: 10px;
         margin-top: 5px;
@@ -105,7 +126,15 @@
         grid-template-columns: auto;
         grid-area: confiterias;
         font-family: 'Cabin', sans-serif;
-        font-size:large;
+       
+        background-color: #3D5656;
+        padding: 10px;
+        margin-top: 5px;
+    }
+    .heladerias{
+        display: grid;
+        grid-template-columns: auto;
+        grid-area: heladerias;
         background-color: #3D5656;
         padding: 10px;
         margin-top: 5px;
