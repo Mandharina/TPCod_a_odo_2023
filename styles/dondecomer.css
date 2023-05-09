@@ -28,7 +28,7 @@
 }
 .restaurante {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     grid-area: restaurante;
     font-size:large;
     background-color: #3D5656;
@@ -37,7 +37,7 @@
 }
 .confiterias{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     grid-area: confiterias;
     font-size:large;
     background-color: #3D5656;
@@ -46,7 +46,7 @@
 }
 .heladerias{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     grid-area: heladerias;
     font-size:large;
     background-color: #3D5656;
@@ -88,7 +88,7 @@
     font-family: 'Cabin', sans-serif;
     text-align:justify;
     background-color: #CFFDE1;
-    grid-area: tituloC;
+    grid-area: tituloH;
     padding: 10px;
     margin:5px;
     border-radius: 0%;
@@ -99,7 +99,7 @@
     border-radius: 7%;
 
 }  
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
 	.contenedor {
         grid-template-columns: auto;
 		grid-template-areas:
@@ -149,7 +149,7 @@
    
         font-family: 'Cabin', sans-serif;
         text-align:justify;
-        background-color: #ffffff;
+        background-color: #CFFDE1;
         grid-area: tituloR;
         padding: 10px;
         margin:5px;
@@ -159,8 +159,18 @@
        
         font-family: 'Cabin', sans-serif;
         text-align:justify;
-        background-color: #ffffff;
+        background-color: #CFFDE1;
         grid-area: tituloC;
+        padding: 10px;
+        margin:5px;
+        border-radius: 0%;
+    }
+    .tituloH {
+   
+        font-family: 'Cabin', sans-serif;
+        text-align:justify;
+        background-color: #CFFDE1;
+        grid-area: tituloH;
         padding: 10px;
         margin:5px;
         border-radius: 0%;
