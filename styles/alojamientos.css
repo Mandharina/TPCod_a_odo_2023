@@ -80,3 +80,7 @@
     margin-top: 5px;
     text-align: center;
 }
+
+a:link{color: #000000;}
+a:hover{color:blue}
+a:visited{color: #000000;}
