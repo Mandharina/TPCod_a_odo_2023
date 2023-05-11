@@ -7,21 +7,19 @@
     grid-template-areas:
         "header header"
         "section section"
-        "article article";
+        "article article"
+        "footer footer";
 
 
 }
 
 .header {
+    display: grid;
+    grid-template-columns: 30% 70%;
     grid-area: header;
-    background: linear-gradient(90deg, rgba(254,208,73,1) 0%, rgba(185,140,8,1) 100%);
-    font-family: 'Zeyada', cursive;
-    font-size: 70px;
-    padding: 10px;
-    text-align: right;
-    line-height:120%;
-    text-shadow: 4px 4px 5px #0005;
-    margin: 5px;
+    background-color: #FED049;
+    background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
+
 
 }
 
@@ -74,3 +72,15 @@
     border-radius: 7%;
 
 }
+
+.footer {
+    grid-area: footer;
+    background-color: #000000;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+a:link{color: #000000;}
+a:hover{color:blue}
+a:visited{color: #000000;}
