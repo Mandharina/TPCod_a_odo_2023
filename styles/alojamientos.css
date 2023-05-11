@@ -7,7 +7,8 @@
     grid-template-areas:
         "header header"
         "section section"
-        "article article";
+        "article article"
+        "footer footer";
 
 
 }
@@ -70,4 +71,12 @@
     padding: 10px; 
     border-radius: 7%;
 
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #000000;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
 }
