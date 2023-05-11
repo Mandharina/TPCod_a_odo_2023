@@ -46,7 +46,7 @@ button {
 
 .nav {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     grid-area: nav;
     background-color: #CFFDE1;
     margin-top: 5px;
@@ -114,7 +114,7 @@ button {
 
 }
 
-.form {}
+/*.form {}*/
 
 .footer {
     grid-area: footer;

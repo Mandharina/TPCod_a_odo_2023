@@ -8,7 +8,8 @@
         "tituloC tituloC"
         "confiterias confiterias"
         "tituloH tituloH"
-        "heladerias heladerias";
+        "heladerias heladerias"
+        ;
 
 
 }
@@ -99,6 +100,7 @@
     border-radius: 7%;
 
 }  
+
 @media screen and (max-width: 900px){
 	.contenedor {
         grid-template-columns: auto;

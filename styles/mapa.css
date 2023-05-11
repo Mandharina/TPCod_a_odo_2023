@@ -1,0 +1,65 @@
+/* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}*/
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "titulo"
+        "mapa";
+}
+
+body {
+    position: relative;
+}
+
+#map{
+    grid-area: mapa;
+    height: 75vh;
+    width: 100%;
+    z-index: 20;
+    grid-template-columns: 100%;
+}
+
+#select-location {
+    grid-area: mapa;
+    left: 55px;
+    top: 190px;
+    position: absolute;
+    z-index: 100;
+    padding: 5px;
+}
+
+.resto{
+    background-color:#fdb98c ;
+}
+.confiteria{
+    background-color:#eef77c ;    
+}
+.heladeria{
+    background-color:#82e2f3 ;
+}
+.queHacer{
+    background-color:#fd5858 ;
+}
+.alojamientos{
+    background-color:#53a75e ;
+}
+.titulo{
+    grid-area: titulo;
+    background: linear-gradient(90deg, rgba(254,208,73,1) 0%, rgba(185,140,8,1) 100%);
+    font-family: 'Zeyada', cursive;
+    font-size: 70px;
+    padding: 10px;
+    text-align: right;
+    line-height:120%;
+    text-shadow: 4px 4px 5px #0005;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+   
+}
