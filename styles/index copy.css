@@ -18,12 +18,13 @@ button {
 **/
 .contenedor {
     display: grid;
-    grid-template: auto auto auto auto auto / auto auto;
+    grid-template: auto auto auto auto auto auto / auto auto;
     grid-template-areas:
         "header header"
         "nav nav"
         "slider slider"
-        "article article"        
+        "article article"
+        "section section"
         "footer footer";
 
 
@@ -33,7 +34,7 @@ button {
     display: grid;
     grid-template-columns: 30% 70%;
     grid-area: header;
-    background-color: #FED049;
+    background-color: #E9EDC9;
     background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
 
 }
@@ -46,9 +47,9 @@ button {
 
 .nav {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
     grid-area: nav;
-    background-color: #CFFDE1;
+    background-color: #F4B183;
     margin-top: 5px;
 
 }
@@ -71,7 +72,7 @@ button {
     opacity: 1;
 }
 .slider-marco{
-    background-color: #3D5656;
+    background-color: #DFA67B;
     padding:0;
     margin-top: 5px;
     grid-area: slider;
@@ -97,7 +98,7 @@ button {
     display: grid;
     grid-template-columns: auto auto;
     grid-area: article;
-    background-color: #3D5656;
+    background-color: #DFA67B;
     padding: 10px;
     margin-top: 5px;
 }
@@ -135,90 +136,13 @@ button {
 
 }
 
-/*.form {}*/
+.form {}
 
 .footer {
     grid-area: footer;
     background-color: #FED049;
     margin-top: 5px;
 }
-
-/*de aqui en adelante codigo para hacer la pagina responsiva*/
-@media screen and (max-width:720px) {
-    .header {
-        display: grid;
-        grid-template-columns: 0% 100%;
-        grid-area: header;
-        background-color: #FED049;
-        background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
-    
-    }
-
-    .header-logo {
-        display: none;
-    }
-    
-
-    .article {
-        display: grid;
-        grid-template-columns: auto;
-        grid-area: article;
-        background-color: #3D5656;
-        padding: 10px;
-        margin-top: 5px;
-    }
-}
-
-@media screen and (max-width:480px) {
-    .header {
-        display: grid;
-        grid-template-columns: 0% 100%;
-        grid-area: header;
-        background-color: #FED049;
-        background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
-    
-    }
-
-    .header-logo {
-        display: none;
-    }
-    .nav {
-        display: grid;
-        grid-template: auto auto auto auto / auto auto;
-        grid-area: nav;
-        background-color: #CFFDE1;
-        margin-top: 5px;
-    
-    }
-
-    .article {
-        display: grid;
-        grid-template-columns: auto;
-        grid-area: article;
-        background-color: #3D5656;
-        padding: 10px;
-        margin-top: 5px;
-    }
-
-    .img-nota-left {
-        width: 100%;         
-        border-radius: 7%;
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto
-    
-    
-    }
-    
-    .img-nota-right {
-        width: 100%;         
-        border-radius: 7%;
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto
-    
-    }
-
 @keyframes slide {
     0% {margin-left: 0%;}
     20%{margin-left: 0%;}
