@@ -141,7 +141,20 @@ button {
     grid-area: footer;
     background-color: #FED049;
     margin-top: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+        
 }
+.footer-it {
+    padding: 20px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+
+}
+
+
 @keyframes slide {
     0% {margin-left: 0%;}
     20%{margin-left: 0%;}
