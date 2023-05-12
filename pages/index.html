@@ -20,7 +20,7 @@
 <body>
     <main class="contenedor">
         <header class="item header">
-            <div>
+            <div class="header-logo">
                 <img src="/images/logo.png" width="200" alt="Logotipo de la página" style="padding: 30px;">
             </div>
             <div class="header-title" style=" padding-top: 20px; line-height:120%;text-shadow: 4px 4px 5px #0005">
@@ -89,16 +89,21 @@
 
             </div>
 
-
         </article>
-        <section class="item section">
+        <section class="item section" action="">
             <form class="form">
                 <p style="font-family: 'Zeyada', cursive; font-size: 40px;line-height:0px; text-shadow: 4px 4px 5px #0005;">Dejanos tu consulta</p>
-                <input size="50" type="text" name="firstname" placeholder="Tu nombre"> <br><br>
+                <label class="label" for="nombre">Nombre</label>
+                <input size="50" type="text" name="firstname" id="nombre" placeholder="Tu nombre"> <br><br>
                 <textarea name="coment" rows="10" cols="50" placeholder="¿Qué querés saber?"></textarea> <br><br>
-                <input type="email" name="mail" placeholder="Dejanos tu mail">
+                <label class="label" for="email">E-mail</label>
+                <input type="email" name="mail" id="email"placeholder="Dejanos tu mail">
                 <input type="submit" >
             </form>
+
+
+                <script src="script.js"></script>
+            
         </section>
         <footer class="item footer">
             Teléfonos útiles
