@@ -64,7 +64,7 @@ a {
 
 }
 
-.nav:hover .text {
+.nav-it:hover .text {
     opacity: 1;
 }
 .abrir-menu{
@@ -211,6 +211,7 @@ a {
         border-radius: 7%;
         margin: 2%;
     }
+}
 @media screen and (max-width: 768px){
 	.contenedor {
 		grid-template: auto auto auto auto auto/ auto;
