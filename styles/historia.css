@@ -17,9 +17,11 @@ a {
 }
 .header{
     grid-area: header;
+    display: grid;
+    grid-template-columns: 30% 70%;
     background: linear-gradient(90deg, rgba(254,208,73,1) 0%, rgba(185,140,8,1) 100%);
     font-family: 'Zeyada', cursive;
-    font-size: 70px;
+    font-size: 100px;
     padding: 10px;
     text-align: right;
     line-height:120%;
@@ -81,6 +83,8 @@ a {
     font-family: 'Cabin', sans-serif;
     text-align: right;
 }
+
+/*de aqui en adelante codigo para hacer la pagina responsiva*/
 @media screen and (max-width: 992px){
 	.contenedor {
 		grid-template: auto auto auto auto auto/ auto;
@@ -91,7 +95,11 @@ a {
         "article3"
         "article4"
         "footer"
-}
+    }
+
+    .header-logo {
+    display: none;
+    }
     h2{
         text-align: center;
     }
@@ -105,17 +113,9 @@ a {
         border-radius: 7%;
         margin: 2%;
     }
+}
 @media screen and (max-width: 768px){
-	.contenedor {
-		grid-template: auto auto auto auto auto/ auto;
-        grid-template-areas: 
-        "header"
-        "article1"
-        "article2"
-        "article3"
-        "article4"
-        "footer"
-	}
+	
     .img-article {
         width: 100%;         
         border-radius: 7%;
@@ -131,17 +131,8 @@ a {
         margin-right: auto
     }
 }
+
 @media screen and (max-width: 600px){
-	.contenedor {
-		grid-template: auto auto auto auto auto/ auto;
-        grid-template-areas: 
-        "header"
-        "article1"
-        "article2"
-        "article3"
-        "article4"
-        "footer"
-	}
     .header{
         grid-area: header;
         background: #FED049;

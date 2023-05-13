@@ -12,13 +12,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href ="https://fomts.googleapis.com/css2?family=Cabin&display=swap">
 
+    <script src="/Javascript/mapas.js"></script>
+
     <title>Turismo Tigre/Alojamientos</title>
     <link rel="icon" href="logo.ico">
 </head>
 <body>
     <main class="contenedor">
         <header class="item header">
-            <div>
+            <div class="header-logo">
                 <img src="/images/logo.png" width="200" alt="Logotipo de la página" style="padding: 30px;">
             </div>
             <div class="header-title" style=" padding-top: 20px; line-height:120%;text-shadow: 4px 4px 5px #0005">
@@ -34,7 +36,7 @@
 
         <article class="item article">
             <div class="nota">
-                <h2 style="text-shadow: 4px 4px 5px #0005;">Hostal Aguas Mansas</h2>
+                <h2 style="text-shadow: 4px 4px 5px #0005;" onClick="cambiarA()"><a href="#mapa">Aguas Mansas</a></h2>
                 <div><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/76/85/f7/fachada.jpg?w=1400&h=-1&s=1"
                     alt="fachada Hostal Aguas Mansas" width="200", height="200" class="img-nota-left">
                 </div>
@@ -43,7 +45,7 @@
                 </div>
             </div>
             <div class="nota">
-                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;">Cabañas Aires del Delta</h2>
+                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;" onClick="cambiarB()"><a href="#mapa">Cabañas Aires del Delta</a></h2>
                 <div><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/bd/62/9c/photo1jpg.jpg?w=1200&h=-1&s=1"
                     alt="Cabañas Aires del Delta frente al río" width="200", height="200" class="img-nota-right">
                 </div>
@@ -53,7 +55,7 @@
                     parrilas, piscina, espacios de juegos y actividades para niños y adultos.</div>
             </div>
             <div class="nota">
-                <h2 style="text-shadow: 4px 4px 5px #0005;">Hotel Senador Dupont</h2>
+                <h2 style="text-shadow: 4px 4px 5px #0005;" onClick="cambiarC()"><a href="#mapa">Hotel Senador Dupont</a></h2>
                 <div><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/a9/53/bb/hotel-senador-dupont.jpg?w=1200&h=-1&s=1"
                     alt="fachada Hotel Senador Dupont" width="200", height="200" class="img-nota-left">
                 </div>
@@ -65,7 +67,7 @@
                 </div> 
             </div>
             <div class="nota">
-                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;">Hotel Villa Victoria</h2>
+                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;" onClick="cambiarD()"><a href="#mapa">Hotel Villa Victoria</a></h2>
                 <div><img src="https://www.hotelvillavictoria.se/wp-content/uploads/2019/07/img_3975_copia-1024x683.jpg"
                     alt="Hotel Villa Victoria" width="200", height="200", class="img-nota-right">
                 </div>
@@ -76,7 +78,7 @@
                     gastronomía.</div>
             </div>
             <div class="nota">
-                <h2 style="text-shadow: 4px 4px 5px #0005;">Torrepueblo</h2>
+                <h2 style="text-shadow: 4px 4px 5px #0005;" onClick="cambiarE()"><a href="#mapa">Torrepueblo</a></h2>
                 <div> <img src="https://lh3.googleusercontent.com/p/AF1QipPOnPls_ttu6YilTKhQ5eRp84vlCcgsFgjgGC3V=s1360-w1360-h1020"
                     alt="patio Hotel Torrepueblo" width="200", height="200", class="img-nota-left">
                 </div>
@@ -84,7 +86,7 @@
                 </div>
             </div>
             <div class="nota">
-                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;">Hotel Wyndham Nordelta</h2>
+                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;" onClick="cambiarF()"><a href="#mapa">Hotel Wyndham Nordelta</a></h2>
                 <div><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/e2/80/0d/exterior.jpg?w=1100&h=-1&s=1"
                     alt="fachada Hotel Wyndham Nordelta y vista al lago" width="200", height= "200", class="img-nota-right">
                 </div>
@@ -94,6 +96,9 @@
 
 
         </article>
+        <footer class="footer" id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26328.14463731969!2d-58.596526144204894!3d-34.426295873946415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5a2d0ddb9b1%3A0x2c1a974c67cba1e4!2sTigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1683812475209!5m2!1ses!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </footer>
       </main>      
             
 </body>
