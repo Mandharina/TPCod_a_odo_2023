@@ -23,7 +23,8 @@ button {
         "header header"
         "nav nav"
         "slider slider"
-        "article article"        
+        "article article"  
+        "section section"      
         "footer footer";
 
 
@@ -129,13 +130,32 @@ button {
 .section {
     grid-area: section;
     background-color: #CFFDE1;
-    padding: 15px;
-    margin-top: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
 
 }
 
-/*.form {}*/
+
+ .button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 600px;
+  margin-right: 600px;
+   padding: 0.5em 3em;
+   font-size: 1 em;
+   cursor: pointer;
+   color: #ffffff;
+   background-color: #68B984;
+   border: 3px solid #3D5656;
+   border-radius: 15px;
+
+  
+ }
+ .button:hover {
+   background-color: #3D5656;
+ }
 
 .footer {
     grid-area: footer;
