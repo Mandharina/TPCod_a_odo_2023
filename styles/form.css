@@ -3,18 +3,20 @@ body {
     background-size:cover;
     
 
-.header {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-area: header;
-    background-color: #FED049;
-
-}
-
-.header-title {
-    font-family: 'Zeyada', cursive;
-    font-size: 130px;
-    text-align: center;
+    .header {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-area: header;
+        background-color: #FED049;
+        background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
+    
+    }
+    
+    .header-title {
+        font-family: 'Zeyada', cursive;
+        font-size: 130px;
+        text-align: center;
+    }
 
 }
     
@@ -87,4 +89,4 @@ body {
     #formulario #enviar:hover {
         background-color: #3D5656;
    
-    }}
+    }

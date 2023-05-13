@@ -3,9 +3,12 @@
     display: grid;
     grid-template: auto auto auto auto auto / auto auto;
     grid-template-areas:
-        "header header"
-        "section section"
-        "article article";
+    "header header"
+    "nav nav"
+    "section section"
+    "article article"
+    "footer footer";
+
 
 
 }
@@ -22,7 +25,7 @@
 
 .section {
     grid-area: section;
-    background-color: #CFFDE1;
+    background-color: #56c4f7;
     padding: 10px;
     margin-top: 5px;
     justify-content:center;
@@ -34,8 +37,37 @@
 
 .header-title {
     font-family: 'Zeyada', cursive;
-    font-size: 130px;
+    font-size: 100px;
     text-align: center;
+    margin-top: 20px;
+}
+
+
+.nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-area: nav;
+    background-color: #CFFDE1;
+    margin-top: 5px;
+
+}
+
+.text {
+    opacity: 0;
+
+}
+
+.nav-it {
+    padding: 20px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+
+}
+
+.nav:hover .text {
+    opacity: 1;
 }
 
 
