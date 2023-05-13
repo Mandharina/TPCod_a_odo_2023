@@ -11,15 +11,46 @@
     <link rel="stylesheet" href="/styles/mapa.css">
    
     <title>Mapa de turismo en Tigre</title>
+    <link rel="icon" href="logo.ico">
    
 </head>
-<body>    
+<body>  
+
+
     <div class="contenedor">
         <h4 class="item titulo"><img src="/images/logo.png" width="150" alt="Logotipo de la página" style="padding: 10px;">Mapa</h4>
     <mapa class="item mapa">
-    <select name="select-location" id="select-location">
-        <option value="-1">Seleccione que quiere buscar en el mapa</option>
-        <option value="-1">¿Que hacer?</option>
+    
+
+            <div>
+                <nav class=" item nav">
+                    <div class="nav-it"><a href="historia.html">
+                        <div class="text">Historia</div>
+                        <img src="/images/historiaicono.png" alt="logo historia" width="40"></a>
+                    </div>    
+                    <div class="nav-it"><a href="quehacer.html">
+                        <div class="text">Qué hacer</div>
+                        <img src="/images/entretenimientoicono.png" alt="logo entretenimiento" width="40"></a>
+                    </div>
+                    <div class="nav-it"><a href="dondecomer.html">
+                        <div class="text">Dónde comer</div>
+                        <img src="/images/restauranteicono.png" alt="logo comer" width="40"></a>
+                    </div>
+                    <div class="nav-it"><a href="alojamientos.html">
+                        <div class="text">Alojamientos</div>
+                        <img src="/images/camaicono.png" alt="logo alojamiento" width="40"></a>
+                    </div>
+                    <div class="nav-it"><a href="mapa.html">
+                        <div class="text">Mapa</div>
+                        <img src="/images/lugaricono.ico" alt="logo alojamiento" width="40"></a>
+                    </div>
+                </nav>
+            </div>
+
+     <div>
+    <select class="item select" name="select-location" id="select-location">
+        <option value="-1">Seleccione qué quiere buscar en el mapa</option>
+        <option value="-1">¿Qué hacer?</option>
     
         <option class="queHacer" value="-34.416265257365254, -58.58953888914331">Museo de la Reconquista | Av. Liniers 818</option>
         <option class="queHacer" value="-34.40901479048788, -58.59106710633529">Museo de Arte de Tigre | Av. Victorica 972</option>
@@ -29,7 +60,7 @@
         <option class="queHacer" value="-34.41797350922495, -58.57611720078739">Teatro Niní Marshall | Perú 1401</option>
         <option class="queHacer" value="-34.41820490734522, -58.5725451089699">Puerto de Frutos | Sarmiento 160</option>
 
-        <option value="-1">alojamientos</option>
+        <option value="-1">Alojamientos</option>
     
         <option class="alojamientos" value="-34.42004687656832, -58.58775205027464">Aguas Mansas | Av. Liniers 1255</option>
         <option class="alojamientos" value="-34.39886604601567, -58.57449950836647">Cabañas Aires del Delta | Sarmiento 77</option>
@@ -38,7 +69,7 @@
         <option class="alojamientos" value="-34.405709961729904, -58.730365457671176">Torrepueblo | Colectora Este Ramal Escobar</option>
         <option class="alojamientos" value="-34.39627676753784, -58.647570965616985">Hotel Wyndham Nordelta | Av. del Puerto 240</option>
 
-        <option value="-1">¿Donde comer?</option>
+        <option value="-1">¿Dónde comer?</option>
 
         <option value="-1">Restaurantes</option>
     
@@ -53,17 +84,20 @@
         <option class="resto" value="-34.364933142199156,-58.56096851983107">Gato Blanco | Barco desde Estacion Fluvial Gral. Bartolomé Mitre 345</option>
         <option class="resto" value="-34.42810123000291,-58.581988031471546">LA PROVE -Resto & Grill- | Montes de Oca 895</option>
 
-        <option value="-1">Confiterias</option>
+        <option value="-1">Confiterías</option>
 
         <option class="confiteria" value="-34.42381342331036, -58.57867563332086">Bonafide | Av. Cazón 1401</option>
         <option class="confiteria" value="-34.42709662915858, -58.575106648663045">La Moderna | Av. Cazón 1028</option>
 
-        <option value="-1">Heladerias</option>
+        <option value="-1">Heladerías</option>
 
         <option class="heladeria" value="-34.41378620108956, -58.5845552333214">Via Toscana Heladeria Artesanal | Av. Victorica 470</option>
         <option class="heladeria" value="-34.4232249220654, -58.57537509099203">Helados ARAUCARIA | Sarmiento 420</option>
    
     </select>
+        </div>
+
+
   
     <div id="map" ></div>
    

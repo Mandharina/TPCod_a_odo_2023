@@ -23,7 +23,8 @@ button {
         "header header"
         "nav nav"
         "slider slider"
-        "article article"        
+        "article article"  
+        "section section"      
         "footer footer";
 
 
@@ -129,13 +130,32 @@ button {
 .section {
     grid-area: section;
     background-color: #CFFDE1;
-    padding: 15px;
-    margin-top: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
 
 }
 
-/*.form {}*/
+
+ .button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 600px;
+  margin-right: 600px;
+   padding: 0.5em 3em;
+   font-size: 1 em;
+   cursor: pointer;
+   color: #ffffff;
+   background-color: #68B984;
+   border: 3px solid #3D5656;
+   border-radius: 15px;
+
+  
+ }
+ .button:hover {
+   background-color: #3D5656;
+ }
 
 .footer {
     grid-area: footer;
@@ -154,6 +174,83 @@ button {
 
 }
 
+/*de aqui en adelante codigo para hacer la pagina responsiva*/
+@media screen and (max-width:720px) {
+    .header {
+        display: grid;
+        grid-template-columns: 0% 100%;
+        grid-area: header;
+        background-color: #FED049;
+        background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
+    
+    }
+
+    .header-logo {
+        display: none;
+    }
+    
+
+    .article {
+        display: grid;
+        grid-template-columns: auto;
+        grid-area: article;
+        background-color: #3D5656;
+        padding: 10px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .header {
+        display: grid;
+        grid-template-columns: 0% 100%;
+        grid-area: header;
+        background-color: #FED049;
+        background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
+    
+    }
+
+    .header-logo {
+        display: none;
+    }
+    .nav {
+        display: grid;
+        grid-template: auto auto auto auto / auto auto;
+        grid-area: nav;
+        background-color: #CFFDE1;
+        margin-top: 5px;
+    
+    }
+
+    .article {
+        display: grid;
+        grid-template-columns: auto;
+        grid-area: article;
+        background-color: #3D5656;
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    .img-nota-left {
+        width: 100%;         
+        border-radius: 7%;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto
+    
+    
+    }
+    
+    .img-nota-right {
+        width: 100%;         
+        border-radius: 7%;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto
+    
+    }
+
+}
 
 @keyframes slide {
     0% {margin-left: 0%;}

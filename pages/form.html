@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/styles/form.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <title>Turismo tigre/Contacto</title>
+	<link rel="icon" href="/images/logo.ico">
+</head>
+<body>
+	<section class="contenedor">
+        <header class="item header">
+            <div>
+                <img src="/images/logo.png" width="150" alt="Logotipo de la página" style="padding: 30px;">
+            </div>
+            <div class="header-title">
+                Turismo Tigre
+            </div>
+        </header>
+	</section>
+<div id="wrap">
+<br><br>
+<script src= "form.js"></script>
+	<form id="formulario">
+        <hr>
+                <h2>¿Tenés alguna consulta o sugerencia?</h2>
+                    <hr><hr>
+                    <p>Completá este formulario para ponerte en contacto con nosotros</p></label>
+                    <hr>
+                <br>
+		
+		<label for="nombre">Tu Nombre:</label>
+		<input type="text" id="nombre" required name="nombre" autocomplete="off" placeholder="Ingresá tu nombre" >
+		<label for="email">Tu Email:</label>
+		<input type="email" id="email" name="email" autocomplete="off" required placeholder="Ingresá tu correo">
+		<label for="asunto">Asunto:</label>
+		<input type="text" id="asunto" autocomplete="off" name="asunto">
+		<label for="descripcion">Mensaje:</label>
+		<textarea name="descripcion" autocomplete="off" required id="descripcion" cols="30" rows="5" placeholder="Escribí tu mensaje
+Te responderemos lo antes posible"></textarea>
+		<input type="submit" id="enviar" value="Enviar">
+		
+	</form>
+
+</div>        
+	<br>	
+	
+</body>
+</html>

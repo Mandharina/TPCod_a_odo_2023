@@ -6,12 +6,15 @@
     grid-template: auto auto auto auto auto / auto auto;
     grid-template-areas:
         "header header"
+        "nav nav"
         "section section"
         "article article"
         "footer footer";
 
 
 }
+
+    
 
 .header {
     display: grid;
@@ -20,12 +23,45 @@
     background-color: #FED049;
     background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
 
+}
 
+.header-title {
+    font-family: 'Zeyada', cursive;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-area: nav;
+    background-color: #CFFDE1;
+    margin-top: 5px;
+
+}
+
+.text {
+    opacity: 0;
+
+}
+
+.nav-it {
+    padding: 20px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+
+}
+
+.nav:hover .text {
+    opacity: 1;
 }
 
 .section {
     grid-area: section;
-    background-color: #CFFDE1;
+    background-color: #56c4f7;
     padding: 10px;
     margin-top: 5px;
     justify-content:center;
@@ -34,12 +70,6 @@
 
 }
 
-
-.header-title {
-    font-family: 'Zeyada', cursive;
-    font-size: 130px;
-    text-align: center;
-}
 
 
 .article {
@@ -73,9 +103,85 @@
 
 }
 
+/*de aqui en adelante codigo para hacer la pagina responsiva*/
+@media screen and (max-width:720px) {
+    .header {
+        display: grid;
+        grid-template-columns: 0% 100%;
+        grid-area: header;
+        background-color: #FED049;
+        background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
+    
+    }
+
+    .header-logo {
+        display: none;
+    }
+    
+
+    .article {
+        display: grid;
+        grid-template-columns: auto;
+        grid-area: article;
+        background-color: #3D5656;
+        padding: 10px;
+        margin-top: 5px;
+    }
+}    
+
+@media screen and (max-width:480px) {
+    .header {
+        display: grid;
+        grid-template-columns: 0% 100%;
+        grid-area: header;
+        background-color: #FED049;
+        background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
+    
+    }
+
+    .header-logo {
+        display: none;
+    }
+    .nav {
+        display: grid;
+        grid-template: auto auto auto auto / auto auto;
+        grid-area: nav;
+        background-color: #CFFDE1;
+        margin-top: 5px;
+    
+    }
+
+    .article {
+        display: grid;
+        grid-template-columns: auto;
+        grid-area: article;
+        background-color: #3D5656;
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    .img-nota-left {
+        width: 100%;         
+        border-radius: 7%;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto
+    
+    
+    }
+    
+    .img-nota-right {
+        width: 100%;         
+        border-radius: 7%;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto
+    
+    }
+}
 .footer {
     grid-area: footer;
-    background-color: #000000;
+    background-color: #56c4f7;
     padding: 10px;
     margin-top: 5px;
     text-align: center;

@@ -10,11 +10,41 @@
     grid-template-columns: auto;
     grid-template-areas:
         "titulo"
+        "nav"
+        "select"
         "mapa";
 }
 
 body {
     position: relative;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-area: nav;
+    background-color: #CFFDE1;
+    margin-top: 60px;
+
+}
+
+.text {
+    opacity: 0;
+
+}
+
+.nav-it {
+    padding: 20px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+
+}
+
+.nav:hover .text {
+    opacity: 1;
+
 }
 
 #map{
@@ -29,9 +59,9 @@ body {
     grid-area: mapa;
     left: 55px;
     top: 190px;
-    position: absolute;
+    position:absolute;
     z-index: 100;
-    padding: 5px;
+    padding: 8px;
 }
 
 .resto{

@@ -240,6 +240,7 @@ a {
         margin-right: auto
     }
 }
+
 @media screen and (max-width: 600px){
 	.contenedor {
 		grid-template: auto auto auto auto auto/ auto;
