@@ -136,38 +136,64 @@ button {
 .section {
     grid-area: section;
     background-color: #CFFDE1;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 
-.button {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 600px;
-    margin-right: 600px;
-    padding: 0.5em 3em;
-    font-size: 1 em;
+ .boton {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color:#68B984;
+    border: 2px solid ;
+    border-radius: 14px;
     cursor: pointer;
-    color: #ffffff;
-    background-color: #68B984;
-    border: 3px solid #3D5656;
-    border-radius: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 35px;
+    line-height: 1;
+    margin: 20px;
+    padding: 24px 70px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-color: #3D5656;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #68B984 inset, 0 0 0 0 #68B984;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .boton:hover {
+    box-shadow: 0 0 15px 0 rgba(62, 251, 81, 0.96) inset, 0 0 15px 6px rgba(44, 253, 93, 0.899);
+    background-color: #fff;
+    color: #3D5656;
+    font-weight: bolder;
+  }
+
+  .boton:hover::selection{
+    background-color: rgba(72, 113, 249, 0.832);
 
 
-}
+  }
 
-.button:hover {
-    background-color: #3D5656;
-}
 
 .footer {
     grid-area: footer;
     background-color: #FED049;
     margin-top: 5px;
+<<<<<<< HEAD
+    text-align: center;
+=======
     display: grid;
     grid-template-columns: auto auto auto auto auto;
 
@@ -180,6 +206,7 @@ button {
     text-align: center;
 
 
+>>>>>>> a9c1d1ff76bdcb31d8ac931fde225f54a45d1b6c
 }
 
 /*de aqui en adelante codigo para hacer la pagina responsiva*/
