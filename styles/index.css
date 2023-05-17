@@ -1,3 +1,4 @@
+
 a {
     text-decoration: none;
     color: black;
@@ -23,8 +24,8 @@ button {
         "header header"
         "nav nav"
         "slider slider"
-        "article article"  
-        "section section"      
+        "article article"
+        "section section"
         "footer footer";
 
 
@@ -32,10 +33,11 @@ button {
 
 .header {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 10% 90%;
     grid-area: header;
     background-color: #FED049;
     background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
+    align-items: center;
 
 }
 
@@ -44,7 +46,6 @@ button {
     font-size: 130px;
     text-align: center;
 }
-
 .nav {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -71,26 +72,30 @@ button {
 .nav-it:hover .text {
     opacity: 1;
 }
-.slider-marco{
+
+.slider-marco {
     background-color: #3D5656;
-    padding:0;
+    padding: 0;
     margin-top: 5px;
     grid-area: slider;
     width: 100%;
     height: auto;
     overflow: hidden;
-    
+
 }
+
 .slider-marco ul {
     display: flex;
     width: 300%;
     padding: 0px;
     animation: slide 15s infinite;
 }
-.slider-marco li{
+
+.slider-marco li {
     list-style: none;
 }
-.img{
+
+.img {
     width: 100%;
 }
 
@@ -99,7 +104,7 @@ button {
     grid-template-columns: auto auto;
     grid-area: article;
     background-color: #3D5656;
-    padding: 10px;
+    padding: 5px;
     margin-top: 5px;
 }
 
@@ -112,10 +117,11 @@ button {
     border-radius: 1%;
 }
 
-.img-nota-left {
+.img-nota {
     float: left;
     padding: 10px;
     border-radius: 7%;
+    float: left;
 
 
 }
@@ -138,24 +144,25 @@ button {
 }
 
 
- .button {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 600px;
-  margin-right: 600px;
-   padding: 0.5em 3em;
-   font-size: 1 em;
-   cursor: pointer;
-   color: #ffffff;
-   background-color: #68B984;
-   border: 3px solid #3D5656;
-   border-radius: 15px;
+.button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 600px;
+    margin-right: 600px;
+    padding: 0.5em 3em;
+    font-size: 1 em;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #68B984;
+    border: 3px solid #3D5656;
+    border-radius: 15px;
 
-  
- }
- .button:hover {
-   background-color: #3D5656;
- }
+
+}
+
+.button:hover {
+    background-color: #3D5656;
+}
 
 .footer {
     grid-area: footer;
@@ -163,8 +170,9 @@ button {
     margin-top: 5px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-        
+
 }
+
 .footer-it {
     padding: 20px;
     font-family: 'Cabin', sans-serif;
@@ -182,13 +190,13 @@ button {
         grid-area: header;
         background-color: #FED049;
         background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
-    
+
     }
 
     .header-logo {
         display: none;
     }
-    
+
 
     .article {
         display: grid;
@@ -207,19 +215,20 @@ button {
         grid-area: header;
         background-color: #FED049;
         background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
-    
+
     }
 
     .header-logo {
         display: none;
     }
+
     .nav {
         display: grid;
         grid-template: auto auto auto auto / auto auto;
         grid-area: nav;
         background-color: #CFFDE1;
         margin-top: 5px;
-    
+
     }
 
     .article {
@@ -232,34 +241,46 @@ button {
     }
 
     .img-nota-left {
-        width: 100%;         
+        width: 100%;
         border-radius: 7%;
         padding: 0;
         margin-left: auto;
         margin-right: auto
-    
-    
     }
-    
+
     .img-nota-right {
-        width: 100%;         
+        width: 100%;
         border-radius: 7%;
         padding: 0;
         margin-left: auto;
         margin-right: auto
-    
     }
 
 }
 
 @keyframes slide {
-    0% {margin-left: 0%;}
-    20%{margin-left: 0%;}
+    0% {
+        margin-left: 0%;
+    }
 
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
+    20% {
+        margin-left: 0%;
+    }
 
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-   
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
 }
