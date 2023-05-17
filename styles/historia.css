@@ -1,3 +1,4 @@
+
 a {
     text-decoration: none;
     color: black;
@@ -6,34 +7,97 @@ a {
 }
 .contenedor {
     display: grid;
-    grid-template: auto auto auto auto/ 35% 30% 35%;
+    grid-template: auto auto auto auto auto auto/ 35% 30% 35%;
     grid-template-areas:
         "header header header"
+        "nav nav nav"
+        "subtitle subtitle subtitle"
         "article1 article1 article3"
         "article4 article2 article2"
         "footer footer footer"
         
         
 }
-.header{
-    grid-area: header;
+.header {
     display: grid;
-    grid-template-columns: 30% 70%;
-    background: linear-gradient(90deg, rgba(254,208,73,1) 0%, rgba(185,140,8,1) 100%);
+    grid-template-columns: 10% 90%;
+    grid-area: header;
+    background-color: #FED049;
+    background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
+    align-items: center;
+
+}
+
+.header-title {
     font-family: 'Zeyada', cursive;
-    font-size: 100px;
-    padding: 10px;
-    text-align: right;
-    line-height:120%;
-    text-shadow: 4px 4px 5px #fff;
+    font-size: 130px;
+    text-align: center;
+}
+
+.nav {
+    
+    align-items: center;
+    grid-area: nav;
+    list-style: none;
+    background-color: #CFFDE1;
+    margin-top: 5px;
+
+}
+
+.text {
+    opacity: 0;
+
+}
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
     margin: 5px;
 }
+.nav-it {
+    text-decoration: none;
+    padding: 20px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+
+}
+
+.nav-it:hover .text {
+    opacity: 1;
+}
+.abrir-menu{
+    background-color:#CFFDE1;
+    border: 0;
+    display: none;
+
+}
+.cerrar-menu{
+    background-color: #CFFDE1;
+    border: 0;
+    display: none;
+    
+}
+.subtitle {
+    grid-area: subtitle;
+    font-size:xx-large;
+    background-color:#68B984;
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+    line-height:120%;
+    text-shadow: 4px 4px 5px #fff;
+    margin-top: 5px;
+    
+}
+
 .article1{
     grid-area: article1;    
     font-family: 'Cabin', sans-serif;
     text-align:justify;
-    background-color: #68B984;
-    padding: 10px;
+    color: white;
+    background-color:#3D5656;
+    padding: 5px;
     margin:5px;
     border-radius: 0%;
     
@@ -42,7 +106,8 @@ a {
     grid-area: article2;
     font-family: 'Cabin', sans-serif;
     text-align:justify;
-    background-color: #68B984;
+    color: white;
+    background-color:#3D5656;
     padding: 10px;
     margin:5px ;
 }
@@ -50,7 +115,8 @@ a {
     grid-area: article3;
     font-family: 'Cabin', sans-serif;
     text-align:justify;
-    background-color: #68B984;
+    color: white;
+    background-color:#3D5656;
     padding: 10px;
     margin:5px ;
 }
@@ -58,7 +124,8 @@ a {
     grid-area: article4;
     font-family: 'Cabin', sans-serif;
     text-align:justify;
-    background-color: #68B984;
+    color: white;
+    background-color:#3D5656;
     padding: 10px;
     margin:5px;
     border-radius: 0%;
@@ -75,34 +142,65 @@ a {
     padding: 10px; 
     border-radius: 7%;
 }
-.footer{
+.footer {
     grid-area: footer;
-    background: #CFFDE1;
-    padding: 10px;
-    margin:5px;
+    background-color: #FED049;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+        
+}
+.footer-it {
+    padding: 20px;
     font-family: 'Cabin', sans-serif;
-    text-align: right;
+    font-size: 20px;
+    text-align: center;
+
+
 }
 
-/*de aqui en adelante codigo para hacer la pagina responsiva*/
 @media screen and (max-width: 992px){
 	.contenedor {
 		grid-template: auto auto auto auto auto/ auto;
         grid-template-areas: 
         "header"
+        "nav"
+        "subtitle"
         "article1"
         "article2"
         "article3"
         "article4"
         "footer"
+}
+    .abrir-menu{
+        display: block;
+        right: 0;
+        align-items: end;
     }
-
-    .header-logo {
-    display: none;
+    .cerrar-menu.visible{
+        display: block;
     }
-    h2{
-        text-align: center;
+    .abrir-menu.invisible{
+        display: none;
     }
+    
+    .nav{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: end;       
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-list.visible{
+        display: block;
+        flex-direction: column;
+        list-style-type: none;
+        justify-content: space-between;
+    }
+    
+    
     .img-article {
         width: 60%;         
         border-radius: 7%;
@@ -115,7 +213,18 @@ a {
     }
 }
 @media screen and (max-width: 768px){
-	
+	.contenedor {
+		grid-template: auto auto auto auto auto/ auto;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "subtitle"
+        "article1"
+        "article2"
+        "article3"
+        "article4"
+        "footer"
+	}
     .img-article {
         width: 100%;         
         border-radius: 7%;
@@ -133,6 +242,18 @@ a {
 }
 
 @media screen and (max-width: 600px){
+	.contenedor {
+		grid-template: auto auto auto auto auto/ auto;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "subtitle"
+        "article1"
+        "article2"
+        "article3"
+        "article4"
+        "footer"
+	}
     .header{
         grid-area: header;
         background: #FED049;

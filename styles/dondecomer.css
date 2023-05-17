@@ -3,66 +3,82 @@
     grid-template-columns: auto auto;
     grid-template-areas:
         "titulo titulo"
+        "nav nav"
         "tituloR tituloR"
         "restaurante restaurante"
         "tituloC tituloC"
         "confiterias confiterias"
         "tituloH tituloH"
-        "heladerias heladerias"
-        ;
-
-
+        "heladerias heladerias";
 }
 .titulo{
+    display:grid;
+    grid-template-columns: 30% auto;
     grid-area: titulo;
     background: linear-gradient(90deg, rgba(254,208,73,1) 0%, rgba(185,140,8,1) 100%);
     font-family: 'Zeyada', cursive;
     font-size: 70px;
+    
     padding: 10px;
-    text-align: right;
-    line-height:120%;
-    text-shadow: 4px 4px 5px #0005;
     margin: 5px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-   
+    text-align: right;
+    line-height: 120%;
+    text-shadow: 4px 4px 5px #0005;
+ 
 }
-.restaurante {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-area: restaurante;
-    font-size:large;
-    background-color: #3D5656;
-    padding: 10px;
+.nav {
+    
+    align-items:center;
+    grid-area: nav;
+    list-style: none;
+    background-color: #CFFDE1;
     margin-top: 5px;
-}
-.confiterias{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-area: confiterias;
-    font-size:large;
-    background-color: #3D5656;
-    padding: 10px;
-    margin-top: 5px;
-}
-.heladerias{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-area: heladerias;
-    font-size:large;
-    background-color: #3D5656;
-    padding: 10px;
-    margin-top: 5px;
+
 }
 
-.lugares{
-   
+.text {
+    opacity: 0;
+
+}
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 5px;
+}
+.nav-it {
+    text-decoration: none;
+    padding: 20px;
     font-family: 'Cabin', sans-serif;
-    text-align:justify;
+    font-size: 20px;
+    text-align: center;
+
+
+}
+
+.nav-it:hover .text {
+    opacity: 1;
+}
+.abrir-menu{
+    background-color:#CFFDE1;
+    border: 0;
+    display: none;
+
+}
+.cerrar-menu{
+    background-color: #CFFDE1;
+    border: 0;
+    display: none;
+    
+}
+.lugares{
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    font-size:large;
     background-color: #68B984;
     padding: 10px;
     margin:5px;
-    border-radius: 0%;
+   
 }
 .tituloR {
    
@@ -72,7 +88,16 @@
     grid-area: tituloR;
     padding: 10px;
     margin:5px;
-    border-radius: 0%;
+   
+}
+.restaurante {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-area: restaurante; 
+    background-color: #3D5656;
+    padding: 10px;
+    margin-top: 5px;
+   
 }
 .tituloC {
    
@@ -82,7 +107,16 @@
     grid-area: tituloC;
     padding: 10px;
     margin:5px;
-    border-radius: 0%;
+    
+}
+.confiterias{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-area: confiterias;
+    background-color: #3D5656;
+    padding: 10px;
+    margin-top: 5px;
+  
 }
 .tituloH {
    
@@ -92,7 +126,16 @@
     grid-area: tituloH;
     padding: 10px;
     margin:5px;
-    border-radius: 0%;
+  
+}
+.heladerias{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-area: heladerias;
+    background-color: #3D5656;
+    padding: 10px;
+    margin-top: 5px;
+   
 }
 .img-dondec{
     float:left; 
@@ -106,6 +149,7 @@
         grid-template-columns: auto;
 		grid-template-areas:
         "titulo"
+        "nav"
         "tituloR"
         "restaurante"
         "tituloC"
@@ -113,49 +157,73 @@
         "tituloH"
         "heladerias";
 	}
-    .restaurante {
+    .titulo{
         display: grid;
-        grid-template-columns: auto;
-        grid-area: restaurante;
-        font-family: 'Cabin', sans-serif;
-        
-        background-color: #3D5656;
+        grid-area: titulo;
+        background: linear-gradient(90deg, rgba(254,208,73,1) 0%, rgba(185,140,8,1) 100%);
+        font-family: 'Zeyada', cursive;
+        font-size: 70px;
         padding: 10px;
-        margin-top: 5px;
-    }
-    .confiterias{
-        display: grid;
-        grid-template-columns: auto;
-        grid-area: confiterias;
-        font-family: 'Cabin', sans-serif;
+        text-align: right;
+        line-height: 120%;
+        text-shadow: 4px 4px 5px #0005;
+        margin: 5px;
+        grid-template-columns: 30% 70%;
        
-        background-color: #3D5656;
-        padding: 10px;
-        margin-top: 5px;
     }
-    .heladerias{
-        display: grid;
-        grid-template-columns: auto;
-        grid-area: heladerias;
-        background-color: #3D5656;
-        padding: 10px;
-        margin-top: 5px;
+    .abrir-menu{
+        display: block;
+        right: 0;
+        align-items: end;
+    }
+    .cerrar-menu.visible{
+        display: block;
+    }
+    .abrir-menu.invisible{
+        display: none;
     }
     
-    .img-dondec{
-        float:auto; 
-        padding: 10px; 
-        border-radius: 7%;
+    .nav{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: end;       
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-list.visible{
+        display: block;
+        flex-direction: column;
+        list-style-type: none;
+        justify-content: space-between;
+    }
+    .lugares{
+        font-family: 'Cabin', sans-serif;
+        text-align: justify;
+        font-size:large;
+        background-color: #68B984;
+        padding: 10px;
+        margin:5px;
+       
     }
     .tituloR {
-   
+       
         font-family: 'Cabin', sans-serif;
         text-align:justify;
         background-color: #CFFDE1;
         grid-area: tituloR;
         padding: 10px;
         margin:5px;
-        border-radius: 0%;
+       
+    }
+    .restaurante {
+        display: grid;
+        grid-template-columns: auto;
+        grid-area: restaurante; 
+        background-color: #3D5656;
+        padding: 10px;
+        margin-top: 5px;
     }
     .tituloC {
        
@@ -165,17 +233,40 @@
         grid-area: tituloC;
         padding: 10px;
         margin:5px;
-        border-radius: 0%;
+        
+    }
+    .confiterias{
+        display: grid;
+        grid-template-columns: auto;
+        grid-area: confiterias;
+        background-color: #3D5656;
+        padding: 10px;
+        margin-top: 5px;
+      
     }
     .tituloH {
-   
+       
         font-family: 'Cabin', sans-serif;
         text-align:justify;
         background-color: #CFFDE1;
         grid-area: tituloH;
         padding: 10px;
         margin:5px;
-        border-radius: 0%;
+      
+    }
+    .heladerias{
+        display: grid;
+        grid-template-columns: auto;
+        grid-area: heladerias;
+        background-color: #3D5656;
+        padding: 10px;
+        margin-top: 5px;
+       
+    }
+    .img-dondec{
+        float:auto; 
+        padding: 10px; 
+        border-radius: 7%;
     }
 }
 

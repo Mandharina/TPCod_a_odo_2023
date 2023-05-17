@@ -13,22 +13,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <title>Turismo Tigre/Tigre</title>
-    <link rel="icon" href="logo.ico">
+    <link rel="icon" href="/images/logo.ico">
 </head>
 
 <body>
     <main class="contenedor">
         <header class="item header">
-        <div class="header-logo">
-            <img src="/images/logo.png" width="200" alt="Logotipo de la página" style="padding: 30px;">
-        </div>
-        <div class="header-title" style=" padding-top: 20px; line-height:120%;text-shadow: 4px 4px 5px #0005">
-            Breve historia de Tigre
-        </div>
+            <div>
+                <img src="/images/logo.png" width="150" alt="Logotipo de la página" style="padding: 30px;">
+            </div>
+            <div class="header-title" style=" padding-top: 20px; line-height:120%;text-shadow: 4px 4px 5px #0005">
+                Turismo Tigre 
+            </div>
         </header>
-
+        <nav class=" item nav">
+            <button class="abrir-menu" id="abrir"><img src="/images/hamburguesa.png" alt="menú" width="40"></button>
+            <button class="cerrar-menu" id="cerrar" ><img src="/images/boton-cerrar.png" alt="menú" width="40"></button>
+            <ul class="nav-list" id="navList">
+            <li class="nav-it"><a href="historia.html">
+                <div class="text">Historia</div>
+                <img src="/images/historiaicono.png" alt="logo historia" width="40" id="img"></a>
+            </li>    
+            <li class="nav-it"><a href="quehacer.html">
+                <div class="text">Qué hacer</div>
+                <img src="/images/entretenimientoicono.png" alt="logo entretenimiento" width="40"></a>
+            </li>
+            <li class="nav-it"><a href="dondecomer.html">
+                <div class="text">Dónde comer</div>
+                <img src="/images/restauranteicono.png" alt="logo comer" width="40"></a>
+            </li>
+            <li class="nav-it"><a  href="alojamientos.html">
+                <div class="text">Alojamientos</div>
+                <img src="/images/camaicono.png" alt="logo alojamiento" width="40"></a>
+            </li>
+            <li class="nav-it"><a href="mapa.html">
+                <div class="text">Mapa</div>
+                <img src="/images/maps.png" alt="logo alojamiento" width="40"></a>
+            </li>
+            </ul>
+        </nav>
+        <div class="subtitle">Breve historia de Tigre</div>
         <article class="item article1">
-            <h2>El nacimiento de Tigre</h2>
+            <h2 style="text-shadow: 4px 4px 5px #0005">El nacimiento de Tigre</h2>
             <div><img src="/images/historia-cortada.jpg ", alt="Imagen histórica de Tigre"
                     class="img-article"></div>
             <div>
@@ -90,7 +116,7 @@
             </div>
         </article>
         <article class="item article2">
-            <h2>El desembarco de Liniers</h2>
+            <h2 style="text-shadow: 4px 4px 5px #0005">El desembarco de Liniers</h2>
             <div> <img src="/images/desembarco-de-liniers-tigre-reconquista-696x464.jpg",alt="Imagen del desembarco de Liniers" class="img-article">
 
             </div>
@@ -130,7 +156,7 @@
             </div>
         </article>
         <article class="item article3">
-            <h2>Modernidad y desarrollo</h2>
+            <h2 style="text-shadow: 4px 4px 5px #0005">Modernidad y desarrollo</h2>
             <div> <img src="/images/1582895164.jpg", alt="Imagen actual del centro de Tigre", class="img-side"></div>
             <div>
                 <p>En la segunda mitad del siglo XIX, la zona del delta fue “descubierta” como lugar ideal para el
@@ -156,7 +182,7 @@
             </div>
         </article>
         <article class="item article4">
-            <h2>Pueblos originarios</h2>
+            <h2 style="text-shadow: 4px 4px 5px #0005">Pueblos originarios</h2>
             <div> <img src="/images/QUERANDIES.jpg", alt="Querandies" class="img-side"></div>
             <div>
                 <p>A la llegada de los conquistadores europeos, distintos pueblos originarios habitaban el territorio tigrense.
@@ -168,13 +194,27 @@
                    
             </div>
         </article>
-        <footer class="footer"><a href="index.html"><img src="/images/hogar.png" width="40""></a></footer>
+        <footer class="item footer">
+            <div class="footer-it"><a href="">
+                <img src="/images/footer/facebook.png" alt="logo facebook" width="40"></a>
+            </div>
+            <div class="footer-it"><a href="">
+                <img src="/images/footer/instagram.png" alt="logo instagram" width="40"></a>
+            </div>
+            <div class="footer-it"><a href="">
+                <img src="/images/footer/gorjeo.png" alt="logo twiter" width="40"></a>
+            </div>
+            <div class="footer-it"><a href="">
+                <img src="/images/footer/tik-tok.png" alt="logo tik-tok" width="40"></a>
+            </div>    
+            
+        </footer>
 
 
 
 
     </main>
-
+<script src="/Javascript/hamburguesa.js"></script>
 </body>
 
 </html>

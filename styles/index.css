@@ -68,7 +68,7 @@ button {
 
 }
 
-.nav:hover .text {
+.nav-it:hover .text {
     opacity: 1;
 }
 .slider-marco{
@@ -185,7 +185,21 @@ button {
     grid-area: footer;
     background-color: #FED049;
     margin-top: 5px;
+<<<<<<< HEAD
     text-align: center;
+=======
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+        
+}
+.footer-it {
+    padding: 20px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+
+>>>>>>> a9c1d1ff76bdcb31d8ac931fde225f54a45d1b6c
 }
 
 /*de aqui en adelante codigo para hacer la pagina responsiva*/
