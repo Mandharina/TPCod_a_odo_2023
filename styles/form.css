@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://www.buenosairesfreewalks.com/spanish/wp-content/uploads/2016/08/tigre-buenos-aires.jpg);
+    background-image: url(/images/tigre-buenos-aires.jpg);
     background-size:cover;
     
 
@@ -26,25 +26,25 @@ body {
              text-align:center;  
 
     }
-    #formulario {
+    #form {
         width: 500px;
             border: 1px solid #f4fFfF;
             padding: 15px 15px 65px 15px;
             background-color: #CFFDE1;
             text-align: center;
     }
-    #formulario * {
+    #form * {
         font-family: 'Cabin', sans-serif;
         display: block;
         box-sizing: border-box;
     
     }
-    #formulario label {
+    #form label {
         color: #333;
         cursor: default;
         margin: 15px 0 3px 0;
     }
-    #formulario input[type="text"], #formulario input[type="email"], #formulario textarea {
+    #form input[type="text"], #form input[type="email"], #form textarea {
         padding: 8px;
         border: 1px solid #CCC;
         color: #555;
@@ -57,24 +57,24 @@ body {
         -ms-border-radius: 3px;
         -moz-border-radius: 3px;
     }
-    #formulario input[type="text"]:focus, #formulario input[type="email"]:focus, #formulario textarea:focus {
+    #form input[type="text"]:focus, #form input[type="email"]:focus, #form textarea:focus {
         outline: none;
-        box-shadow: 0px 0px 5px #545a5f;
-        -o-box-shadow: 0px 0px 5px #545a5f;
-        -ms-box-shadow: 0px 0px 5px #545a5f;
-        -moz-box-shadow: 0px 0px 5px #545a5f;
+        box-shadow: 0px 0px 6px #545a5f;
+        -o-box-shadow: 0px 0px 6px #545a5f;
+        -ms-box-shadow: 0px 0px 6px #545a5f;
+        -moz-box-shadow: 0px 0px 6px #545a5f;
     }
-     #formulario label[for="descripcion"] {
+     #form label[for="descripcion"] {
         display: inline-block;
         text-align: left;
 
     }
    
-    #formulario #enviar {
+    #form #enviar {
         background-color: #68B984;
         border: 1px solid #3f5446;
         cursor: pointer;
-        float: right;
+        float:right;
         color: #ffffff;
         font-size: 1em;
         margin: 10px 0 10px 15px;
@@ -86,7 +86,21 @@ body {
 
     }
 
-    #formulario #enviar:hover {
+    #form #enviar:hover {
         background-color: #3D5656;
    
+    }
+
+    .input-control.success input{
+        border-color: #09c372;
+    }
+
+    .input-control.error input{
+        border-color: #ff3860;
+    }
+
+    .input-control .error{
+        color: #ff3860;
+        font-size: 9px;
+        height: 13px;
     }

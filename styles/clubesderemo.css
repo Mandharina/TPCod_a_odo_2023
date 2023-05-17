@@ -1,34 +1,18 @@
-a {
-    text-decoration: none;
-    color: black;
-    font-size: x-large;
-    text-shadow: 4px 4px 5px #0005;
-}
 
-button {
-    border: none;
-    background-color: #CFFDE1;
-}
-
-/**a:hover {
-    background: #68B984;
-
-
-}
-**/
 .contenedor {
     display: grid;
     grid-template: auto auto auto auto auto / auto auto;
     grid-template-areas:
         "header header"
         "nav nav"
-        "slider slider"
-        "article article"  
-        "section section"      
+        "section section"
+        "article article"
         "footer footer";
 
 
 }
+
+    
 
 .header {
     display: grid;
@@ -41,13 +25,14 @@ button {
 
 .header-title {
     font-family: 'Zeyada', cursive;
-    font-size: 130px;
+    font-size: 100px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .nav {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     grid-area: nav;
     background-color: #CFFDE1;
     margin-top: 5px;
@@ -71,34 +56,24 @@ button {
 .nav:hover .text {
     opacity: 1;
 }
-.slider-marco{
-    background-color: #3D5656;
-    padding:0;
+
+.section {
+    grid-area: section;
+    background-color: #56c4f7;
+    padding: 10px;
     margin-top: 5px;
-    grid-area: slider;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    
+    justify-content:center;
+    text-align: center;
+    font-size: larger;
+
 }
-.slider-marco ul {
-    display: flex;
-    width: 300%;
-    padding: 0px;
-    animation: slide 15s infinite;
-}
-.slider-marco li{
-    list-style: none;
-}
-.img{
-    width: 100%;
-}
+
+
 
 .article {
     display: grid;
     grid-template-columns: auto auto;
     grid-area: article;
-    background-color: #3D5656;
     padding: 10px;
     margin-top: 5px;
 }
@@ -107,85 +82,23 @@ button {
     font-family: 'Cabin', sans-serif;
     text-align: justify;
     background-color: #68B984;
-    padding: 10px;
-    margin: 10px;
+    padding: 6px;
+    margin: 6px;
     border-radius: 1%;
+    font-size:large;
 }
-
 .img-nota-left {
-    float: left;
-    padding: 10px;
-    border-radius: 7%;
-
-
+        float: left; 
+        padding: 10px; 
+        border-radius: 7%;
+        
+    
 }
-
 .img-nota-right {
-    float: right;
-    padding: 10px;
+    float: right; 
+    padding: 10px; 
     border-radius: 7%;
 
-}
-
-.section {
-    grid-area: section;
-    background-color: #CFFDE1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
- .boton {
-    box-sizing: border-box;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background-color:#68B984;
-    border: 2px solid ;
-    border-radius: 14px;
-    cursor: pointer;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center;
-    font-size: 35px;
-    line-height: 1;
-    margin: 20px;
-    padding: 24px 70px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    border-color: #3D5656;
-    color: #fff;
-    box-shadow: 0 0 40px 40px #68B984 inset, 0 0 0 0 #68B984;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .boton:hover {
-    box-shadow: 0 0 15px 0 rgba(62, 251, 81, 0.96) inset, 0 0 15px 6px rgba(44, 253, 93, 0.899);
-    background-color: #fff;
-    color: #3D5656;
-    font-weight: bolder;
-  }
-
-  .boton:hover::selection{
-    background-color: rgba(72, 113, 249, 0.832);
-
-
-  }
-
-
-.footer {
-    grid-area: footer;
-    background-color: #FED049;
-    margin-top: 5px;
-    text-align: center;
 }
 
 /*de aqui en adelante codigo para hacer la pagina responsiva*/
@@ -212,7 +125,7 @@ button {
         padding: 10px;
         margin-top: 5px;
     }
-}
+}    
 
 @media screen and (max-width:480px) {
     .header {
@@ -263,17 +176,15 @@ button {
         margin-right: auto
     
     }
-
+}
+.footer {
+    grid-area: footer;
+    background-color: #56c4f7;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
 }
 
-@keyframes slide {
-    0% {margin-left: 0%;}
-    20%{margin-left: 0%;}
-
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-   
-}
+a:link{color: #000000;}
+a:hover{color:blue}
+a:visited{color: #000000;}
