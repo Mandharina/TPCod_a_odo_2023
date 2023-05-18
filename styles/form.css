@@ -46,23 +46,14 @@ body {
     }
     #form input[type="text"], #form input[type="email"], #form textarea {
         padding: 8px;
-        border: 1px solid #CCC;
+        border: 2px solid #CCC;
         color: #555;
         font-size: 1em;
         width: 100%;
         overflow: hidden;
         resize: none;
-        border-radius: 3px;
-        -o-border-radius: 3px;
-        -ms-border-radius: 3px;
-        -moz-border-radius: 3px;
-    }
-    #form input[type="text"]:focus, #form input[type="email"]:focus, #form textarea:focus {
-        outline: none;
-        box-shadow: 0px 0px 6px #545a5f;
-        -o-box-shadow: 0px 0px 6px #545a5f;
-        -ms-box-shadow: 0px 0px 6px #545a5f;
-        -moz-box-shadow: 0px 0px 6px #545a5f;
+        border-radius: 4px;
+        
     }
      #form label[for="descripcion"] {
         display: inline-block;
@@ -78,11 +69,9 @@ body {
         color: #ffffff;
         font-size: 1em;
         margin: 10px 0 10px 15px;
-        padding: 3px 9px;
+        padding: 5px 15px;
         border-radius: 2px;
-        -o-border-radius: 2px;
-        -ms-border-radius: 2px;
-        -moz-border-radius: 2px;
+    
 
     }
 
@@ -90,17 +79,4 @@ body {
         background-color: #3D5656;
    
     }
-
-    .input-control.success input{
-        border-color: #09c372;
-    }
-
-    .input-control.error input{
-        border-color: #ff3860;
-    }
-
-    .input-control .error{
-        color: #ff3860;
-        font-size: 9px;
-        height: 13px;
-    }
+   
