@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,122 +8,207 @@
     <link rel="stylesheet" href="/styles/alojamientos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href ="https://fomts.googleapis.com/css2?family=Zedaya&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href ="https://fomts.googleapis.com/css2?family=Cabin&display=swap">
-
-    <script src="/Javascript/mapas.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <title>Turismo Tigre/Alojamientos</title>
     <link rel="icon" href="logo.ico">
 </head>
+
 <body>
     <main class="contenedor">
         <header class="item header">
-            <div class="header-logo">
-                <img src="/images/logo.png" width="200" alt="Logotipo de la página" style="padding: 30px;">
+            <div>
+                <img src="/images/logo.png" width="150" alt="Logotipo de la página" style="padding: 30px;">
             </div>
             <div class="header-title" style=" padding-top: 20px; line-height:120%;text-shadow: 4px 4px 5px #0005">
-                Alojamientos
+                Turismo Tigre
             </div>
         </header>
-
         <nav class=" item nav">
-            <div class="nav-it"><a href="historia.html">
-                <div class="text">Historia</div>
-                <img src="/images/historiaicono.png" alt="logo historia" width="40"></a>
-            </div>    
-            <div class="nav-it"><a href="quehacer.html">
-                <div class="text">Qué hacer</div>
-                <img src="/images/entretenimientoicono.png" alt="logo entretenimiento" width="40"></a>
-            </div>
-            <div class="nav-it"><a href="dondecomer.html">
-                <div class="text">Dónde comer</div>
-                <img src="/images/restauranteicono.png" alt="logo comer" width="40"></a>
-            </div>
-            <div class="nav-it"><a href="alojamientos.html">
-                <div class="text">Alojamientos</div>
-                <img src="/images/camaicono.png" alt="logo alojamiento" width="40"></a>
-            </div>
-            <div class="nav-it"><a href="mapa.html">
-                <div class="text">Mapa</div>
-                <img src="/images/maps.png" alt="logo alojamiento" width="40"></a>
-            </div>
+            <button class="abrir-menu" id="abrir"><img src="/images/iconos/hamburguesa.png" alt="menú"
+                    width="40"></button>
+            <button class="cerrar-menu" id="cerrar"><img src="/images/iconos/boton-cerrar.png" alt="menú"
+                    width="40"></button>
+            <ul class="nav-list" id="navList">
+                <li class="nav-it"><a href="historia.html">
+                        <div class="text">Historia</div>
+                        <img src="/images/iconos/historiaicono.png" alt="logo historia" width="40" id="img">
+                    </a>
+                </li>
+                <li class="nav-it"><a href="quehacer.html">
+                        <div class="text">Qué hacer</div>
+                        <img src="/images/iconos/entretenimientoicono.png" alt="logo entretenimiento" width="40">
+                    </a>
+                </li>
+                <li class="nav-it"><a href="dondecomer.html">
+                        <div class="text">Dónde comer</div>
+                        <img src="/images/iconos/restauranteicono.png" alt="logo comer" width="40">
+                    </a>
+                </li>
+
+                <li class="nav-it"><a href="mapa.html">
+                        <div class="text">Mapa</div>
+                        <img src="/images/iconos/maps.png" alt="logo alojamiento" width="40">
+                    </a>
+                </li>
+                <li class="nav-it"><a href="clubesderemo.html">
+                        <div class="text">Clubes de Remo</div>
+                        <img src="/images/iconos/bote-de-remos.png" alt="logo alojamiento" width="40">
+                    </a>
+                </li>
+                <li class="nav-it"><a href="index.html">
+                        <div class="text">Inicio</div>
+                        <img src="/images/iconos/hogar.png" alt="logo home" width="40" id="img">
+                    </a>
+                </li>
+            </ul>
         </nav>
-    
-        <section class="section">
-         <h1>¿Estás buscando dónde alojarte? <br>
-            En Tigre encontrarás múltiples opciones para elegir. Desde hostales o
-        cabañas, hasta hoteles 5 estrellas.</h1>
-        </section>
+        <div class="subtitle">Alojamientos<p>¿Estás buscando dónde alojarte?
+                En Tigre encontrarás múltiples opciones para elegir. Desde hostales o
+                cabañas, hasta hoteles 5 estrellas.</p>
+        </div>
+
+
+
+
 
         <article class="item article">
             <div class="nota">
-                <h2 style="text-shadow: 4px 4px 5px #0005;" onClick="cambiarA()"><a href="#mapa">Aguas Mansas</a></h2>
-                <div><img src="/images/aguasmansas.jpg"
-                    alt="fachada Hostal Aguas Mansas" width="200", height="200" class="img-nota-left">
+                <h2 style="text-shadow: 4px 4px 5px #0005;">Aguas Mansas</h2>
+                <div>
+                    <img src="/images/aguasmansas.jpg" alt="fachada Hostal Aguas Mansas" width="200" , height="200"
+                        class="img-nota-left">
                 </div>
-                <div>Si pensás en algo económico pero con buena atención, desayuno incluido y cerca del centro, el Hostal Aguas
-                     Mansas es una gran opción, con piscina, estacionamiento gratis y acceso a wi-fi. 
+                <div>Si pensás en algo económico pero con buena atención, desayuno incluido y cerca del centro, el
+                    hostal Aguas Mansas es una gran opción, con piscina, estacionamiento gratis y acceso a wi-fi.
+                </div>
+                <br>
+                <div onClick="cambiarA()"><a href="#mapa"
+                        style="color: rgb(3, 3, 99); font-size:large; text-align: right; text-shadow: none;">Ver en el
+                        mapa</a>
                 </div>
             </div>
             <div class="nota">
-                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;" onClick="cambiarB()"><a href="#mapa">Cabañas Aires del Delta</a></h2>
-                <div><img src="/images/airesdeldelta.jpg"
-                    alt="Cabañas Aires del Delta frente al río" width="200", height="200" class="img-nota-right">
+                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;">Cabañas Aires del Delta</h2>
+                <div>
+                    <img src="/images/airesdeldelta.jpg" alt="Cabañas Aires del Delta frente al río" width="200"
+                        ,height="200" class="img-nota-right">
                 </div>
-                <div>En un entorno natural, a la vera del río y con un amplio parque las Cabañas Aires del Delta son una excelente
-                    elección.
-                    Están ubicadas en el cruce entre los ríos Sarmiento y Luján. Cuentan con internet y desayuno gratis,
-                    parrilas, piscina, espacios de juegos y actividades para niños y adultos.</div>
+                <div>En un entorno natural, a la vera del río y con un amplio parque las Cabañas Aires del Delta son una
+                    excelente elección. Están ubicadas en el cruce entre los ríos Sarmiento y Luján. Cuentan con
+                    internet y desayuno gratis, parrilas, piscina, espacios de juegos y actividades para niños y
+                    adultos.
+                </div>
+                <br>
+                <div onClick="cambiarB()"><a href="#mapa"
+                        style="color: rgb(3, 3, 99); font-size:medium; text-align: right;text-shadow: none;">Ver en el
+                        mapa</a>
+                </div>
             </div>
             <div class="nota">
-                <h2 style="text-shadow: 4px 4px 5px #0005;" onClick="cambiarC()"><a href="#mapa">Hotel Senador Dupont</a></h2>
-                <div><img src="/images/hotel-senador-dupont.jpg"
-                    alt="fachada Hotel Senador Dupont" width="200", height="200" class="img-nota-left">
+                <h2 style="text-shadow: 4px 4px 5px #0005;">Hotel Senador
+                    Dupont</h2>
+                <div><img src="/images/hotel-senador-dupont.jpg" alt="fachada Hotel Senador Dupont" width="200" ,
+                        height="200" class="img-nota-left">
                 </div>
-                <div>Sobre el río Carapachay, en el Delta de Tigre, encontramos el Hostal Senador Dupont, construido sobre un gran
-                    predio de 40 hectáreas. Cuenta con habitaciones con aire acondicionado, algunas de las cuales se encuentran
-                    en el Convento San Francisco. Espacios para eventos privados y reuniones de negocios. Restaurante con exquisita
-                    gastronomía y shows en vivo, visitas guiadas al Convento San Francisco, excursiones, trekking, kayak y remo,
+                <div>Sobre el río Carapachay, en el Delta de Tigre, encontramos el Hostal Senador Dupont, construido
+                    sobre un gran
+                    predio de 40 hectáreas. Cuenta con habitaciones con aire acondicionado, algunas de las cuales se
+                    encuentran
+                    en el Convento San Francisco. Espacios para eventos privados y reuniones de negocios. Restaurante
+                    con exquisita
+                    gastronomía y shows en vivo, visitas guiadas al Convento San Francisco, excursiones, trekking, kayak
+                    y remo,
                     entre otras.
-                </div> 
+                </div>
+                <br>
+                <div onClick="cambiarC()"><a href="#mapa"
+                        style="color: rgb(3, 3, 99);font-size:medium; text-align: right; text-shadow: none;">Ver en el
+                        mapa</a></div>
             </div>
             <div class="nota">
-                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;" onClick="cambiarD()"><a href="#mapa">Hotel Villa Victoria</a></h2>
-                <div><img src="/images/villavictoria.jpg"
-                    alt="Hotel Villa Victoria" width="200", height="200", class="img-nota-right">
+                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;">Hotel
+                    Villa Victoria</a></h2>
+                <div><img src="/images/villavictoria.jpg" alt="Hotel Villa Victoria" width="200" , height="200" ,
+                        class="img-nota-right">
                 </div>
-                <div>Con el estilo colonial que caracterizó históricamente a la ciudad, el Hotel Villa Victoria de Tigre nos
+                <div>Con el estilo colonial que caracterizó históricamente a la ciudad, el Hotel Villa Victoria de Tigre
+                    nos
                     tansporta a otras épocas.
-                    Emplazado en el corazón de la ciudad, nos ofrece estacionamiento, wi-fi, acceso a las piscinas y desayuno
-                    gratuitos, aire acondicionado y calefacción, servicio al cuarto en algunas habitaciones y una excelente
+                    Emplazado en el corazón de la ciudad, nos ofrece estacionamiento, wi-fi, acceso a las piscinas y
+                    desayuno
+                    gratuitos, aire acondicionado y calefacción, servicio al cuarto en algunas habitaciones y una
+                    excelente
                     gastronomía.</div>
+                <br>
+                <div onClick="cambiarD()"><a href="#mapa"
+                        style="color: rgb(3, 3, 99); font-size:large; text-align: right!important; text-shadow: none;">Ver
+                        en el mapa</a></div>
             </div>
             <div class="nota">
-                <h2 style="text-shadow: 4px 4px 5px #0005;" onClick="cambiarE()"><a href="#mapa">Torrepueblo</a></h2>
-                <div> <img src="/images/torrepueblo.jpg"
-                    alt="patio Hotel Torrepueblo" width="200", height="200", class="img-nota-left">
+                <h2 style="text-shadow: 4px 4px 5px #0005;">Torrepueblo</h2>
+                <div> <img src="/images/torrepueblo.jpg" alt="patio Hotel Torrepueblo" width="200" , height="200" ,
+                        class="img-nota-left">
                 </div>
-                <div>Complejo de Suites para alojamiento, paseo comercial, plaza gastronómica y de salud. Todo diseñado en una arquitectura y ambientación italiano-toscana única en el país que invita a tu cabeza a viajar durante tu visita. Seguridad privada, acceso y estacionamiento gratuito. Tambièn hay shows en vivo y eventos.
+                <div>Complejo de Suites para alojamiento, paseo comercial, plaza gastronómica y de salud. Todo diseñado
+                    en una arquitectura y ambientación italiano-toscana única en el país que invita a tu cabeza a viajar
+                    durante tu visita. Seguridad privada, acceso y estacionamiento gratuito. Tambièn hay shows en vivo y
+                    eventos.
                 </div>
+                <br>
+                <div onClick="cambiarE()"><a href="#mapa"
+                        style="color: rgb(3, 3, 99); font-size:large; text-align: right!important; text-shadow: none;">Ver
+                        en el mapa</a></div>
             </div>
             <div class="nota">
-                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;" onClick="cambiarF()"><a href="#mapa">Hotel Wyndham Nordelta</a></h2>
-                <div><img src="/images/wyndham.jpg"
-                    alt="fachada Hotel Wyndham Nordelta y vista al lago" width="200", height= "200", class="img-nota-right">
+                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;">Hotel
+                    Wyndham Nordelta</h2>
+                <div><img src="/images/wyndham.jpg" alt="fachada Hotel Wyndham Nordelta y vista al lago" width="200" ,
+                        height="200" , class="img-nota-right">
                 </div>
-                <div>Wyndham Nordelta es un hotel 5 estrellas de lujo que cuenta con 7 amplios salones de reunión y eventos. Piscina al aire libre y un gimnasio abierto las 24 horas. Conexión Wi Fi gratuita, TV LED por Cable, caja de seguridad, minibar. También cuentan con baño privado con hidromasaje, ducha y amenities.
-                    Desayuno incluido. Servicio exclusivo de valet parking y spa (con cargo adicional). Servicio a la habitación las 24 hs.</div>
+                <div>Wyndham Nordelta es un hotel 5 estrellas de lujo que cuenta con 7 amplios salones de reunión y
+                    eventos. Piscina al aire libre y un gimnasio abierto las 24 horas. Conexión Wi Fi gratuita, TV LED
+                    por Cable, caja de seguridad, minibar. También cuentan con baño privado con hidromasaje, ducha y
+                    amenities.
+                    Desayuno incluido. Servicio exclusivo de valet parking y spa (con cargo adicional). Servicio a la
+                    habitación las 24 hs.</div>
+                <br>
+                <div onClick="cambiarF()"><a href="#mapa"
+                        style="color: rgb(3, 3, 99); font-size:large; text-align: right!important; text-shadow: none;">Ver
+                        en el mapa</a></div>
             </div>
 
 
         </article>
-        <footer class="footer" id="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26328.14463731969!2d-58.596526144204894!3d-34.426295873946415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5a2d0ddb9b1%3A0x2c1a974c67cba1e4!2sTigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1683812475209!5m2!1ses!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="item mapa" id="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26328.14463731969!2d-58.596526144204894!3d-34.426295873946415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5a2d0ddb9b1%3A0x2c1a974c67cba1e4!2sTigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1683812475209!5m2!1ses!2sar"
+                width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <footer class="item footer">
+            <div class="footer-it"><a href="">
+                    <img src="/images/footer/facebook.png" alt="logo facebook" width="40"></a>
+            </div>
+            <div class="footer-it"><a href="">
+                    <img src="/images/footer/instagram.png" alt="logo instagram" width="40"></a>
+            </div>
+            <div class="footer-it"><a href="">
+                    <img src="/images/footer/gorjeo.png" alt="logo twiter" width="40"></a>
+            </div>
+            <div class="footer-it"><a href="">
+                    <img src="/images/footer/tik-tok.png" alt="logo tik-tok" width="40"></a>
+            </div>
+            <div class="footer-it"><a href="index.html">
+                <img src="/images/iconos/hogar.png" alt="logo home" width="40"></a>
+        </div>
+
         </footer>
-      </main>      
-            
+
+    </main>
+    <script src="/Javascript/mapaalojamiento.js"></script>
 </body>
+
 </html>

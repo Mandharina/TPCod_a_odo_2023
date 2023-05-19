@@ -6,183 +6,213 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/dondecomer.css">
-    <link rel="icon" href="logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/logo.ico">
     <title>¿Dónde comer?</title>
 </head>
 
 <body>
-    <a name="dondecomer">
-        <div class="contenedor">
-            <nav class=" item nav">
-                <button class="abrir-menu" id="abrir"><img src="/images/hamburguesa.png" alt="menú" width="40"></button>
-                <button class="cerrar-menu" id="cerrar"><img src="/images/boton-cerrar.png" alt="menú"
-                        width="40"></button>
-                <ul class="nav-list" id="navList">
-                    <li class="nav-it"><a href="historia.html">
-                            <div class="text">Historia</div>
-                            <img src="/images/historiaicono.png" alt="logo historia" width="40" id="img">
-                        </a>
-                    </li>
-                    <li class="nav-it"><a href="quehacer.html">
-                            <div class="text">Qué hacer</div>
-                            <img src="/images/entretenimientoicono.png" alt="logo entretenimiento" width="40">
-                        </a>
-                    </li>
-                    <li class="nav-it"><a href="dondecomer.html">
-                            <div class="text">Dónde comer</div>
-                            <img src="/images/restauranteicono.png" alt="logo comer" width="40">
-                        </a>
-                    </li>
-                    <li class="nav-it"><a href="alojamientos.html">
-                            <div class="text">Alojamientos</div>
-                            <img src="/images/camaicono.png" alt="logo alojamiento" width="40">
-                        </a>
-                    </li>
-                    <li class="nav-it"><a href="mapa.html">
-                            <div class="text">Mapa</div>
-                            <img src="/images/maps.png" alt="logo alojamiento" width="40">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <h4 class="item titulo"><img src="/images/logo.png" width="200">¿Donde comer?</h4>
-            
-            <h2 class="item tituloR">Restaurantes</h2>
-            <br>
-            <restaurante class="item restaurante">
-                <div class="lugares">
+    <main class="contenedor">
+        <header class="item header">
+            <div class="header-logo">
+                <img src="/images/logo.png" width="150" alt="Logotipo de la página" style="padding: 30px;">
+            </div>
+            <div class="header-title" style=" padding-top: 20px; line-height:120%;text-shadow: 4px 4px 5px #0005">
+                Turismo Tigre
+            </div>
+        </header>
+        <nav class=" item nav">
+            <button class="abrir-menu" id="abrir"><img src="/images/iconos/hamburguesa.png" alt="menú"
+                    width="40"></button>
+            <button class="cerrar-menu" id="cerrar"><img src="/images/iconos/boton-cerrar.png" alt="menú"
+                    width="40"></button>
+            <ul class="nav-list" id="navList">
+                <li class="nav-it"><a href="historia.html">
+                        <div class="text">Historia</div>
+                        <img src="/images/iconos/historiaicono.png" alt="logo historia" width="40" id="img">
+                    </a>
+                </li>
+                <li class="nav-it"><a href="quehacer.html">
+                        <div class="text">Qué hacer</div>
+                        <img src="/images/iconos/entretenimientoicono.png" alt="logo entretenimiento" width="40">
+                    </a>
+                </li>
 
-                    <h3>Kanoo Delta | Rio Sarmiento 54</h3>
-                    <div><img src="/images/kanoo delta.png" alt="no es posible cargar la imagen" width="200"
-                            height="200" class="img-dondec"></div>
-                    <div>Sin duda una de las mejores opciones para almorzar, en Kanoo te vas a encontrar con un lindo
-                        ambiente
-                        a
-                        tu alrededor, con diversos platillos con los cuales podrás acompañar esta preciosa vista.</div>
-                </div>
-                <div class="lugares">
-                    <h3>El bodegón de los inmigrantes | Italia 1398</h3>
-                    <img src="/images/bodegon los inmigrantes.png" alt="no es posible cargar la imagen" width="200"
-                        height="200" class="img-dondec">
-                    <p> En este bodegón tenés para probar distintos tipos de carnes, entradas, al igual que vinos y
-                        cervezas.
-                    </p>
-                </div>
-                <div class="lugares">
-                    <h3>Lopez May pulpería | Sáenz Peña 1400</h3>
-                    <img src="/images/lopez may pumperia.png" alt="no es posible cargar la imagen" width="200"
-                        height="200" class="img-dondec">
-                    <p>Esto no es un simple restaurante, esto es una despensa, bazar, comedero y vinería donde podés
-                        disfrutar.
-                    </p>
-                </div>
-                <div class="lugares">
-                    <h3>Cachavacha | Sarmiento 420</h3>
-                    <img src="/images/cachavacha.png" alt="no es posible cargar la imagen" width="200" height="200"
-                        class="img-dondec">
-                    <p>Como dice en el cartel se especializan en pastas y pizzas, pero eso no quiere decir que no
-                        cuenten
-                        con
-                        distinta variedad. Verdaderamente se van a sorprender.</p>
+                <li class="nav-it"><a href="alojamientos.html">
+                        <div class="text">Alojamientos</div>
+                        <img src="/images/iconos/camaicono.png" alt="logo alojamiento" width="40">
+                    </a>
+                </li>
+                <li class="nav-it"><a href="mapa.html">
+                        <div class="text">Mapa</div>
+                        <img src="/images/iconos/maps.png" alt="logo alojamiento" width="40">
+                    </a>
+                </li>
+                <li class="nav-it"><a href="index.html">
+                        <div class="text">Inicio</div>
+                        <img src="/images/iconos/hogar.png" alt="logo home" width="40">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="item subtitle">¿Donde comer?</div>
 
-                </div>
-                <div class="lugares">
-                    <h3>Celestino's | Av. Cazón 902</h3>
-                    <img src="https://img.restaurantguru.com/re51-meals-Celestinos-2022-10-2.jpg" width="200" ,
-                        height="200" class="img-dondec">
-                    <p>Lindo restaurant con vistas a la calle, en esquina, para disfrutar con familia y parejas, la
-                        comida muy buena abundante y con variedad de menu.</p>
+        <div class="item tituloR" id="restoClick">Restaurantes</div>
+        <restaurante class="item restaurante" id="restoMenu">
+            <div class="lugares">
 
-                </div>
-                <div class="lugares">
-                    <h3>María Luján Ristorante | Av. Victorica 509</h3>
-                    <img src="https://cdn0.casamientos.com.ar/vendor/7921/3_2/960/jpg/il-novo-37_7_67921-1560183571.webp"
-                        width="200" , height="200" class="img-dondec">
-                    <p>Terraza al borde del rio con buena iluminación y embarcaciones bellas. Un precioso restaurant
-                        para disfrutar de una buena comida y unas bellas vistas.</p>
+                <h3>Kanoo Delta | Rio Sarmiento 54</h3>
+                <div><img src="/images/kanoo delta.png" alt="no es posible cargar la imagen" width="200" height="200"
+                        class="img-dondec"></div>
+                <div>Sin duda una de las mejores opciones para almorzar, en Kanoo te vas a encontrar con un lindo
+                    ambiente
+                    a
+                    tu alrededor, con diversos platillos con los cuales podrás acompañar esta preciosa vista.</div>
+            </div>
+            <div class="lugares">
+                <h3>El bodegón de los inmigrantes | Italia 1398</h3>
+                <img src="/images/bodegon los inmigrantes.png" alt="no es posible cargar la imagen" width="200"
+                    height="200" class="img-dondec">
+                <p> En este bodegón tenés para probar distintos tipos de carnes, entradas, al igual que vinos y
+                    cervezas.
+                </p>
+            </div>
+            <div class="lugares">
+                <h3>Lopez May pulpería | Sáenz Peña 1400</h3>
+                <img src="/images/lopez may pumperia.png" alt="no es posible cargar la imagen" width="200" height="200"
+                    class="img-dondec">
+                <p>Esto no es un simple restaurante, esto es una despensa, bazar, comedero y vinería donde podés
+                    disfrutar.
+                </p>
+            </div>
+            <div class="lugares">
+                <h3>Cachavacha | Sarmiento 420</h3>
+                <img src="/images/cachavacha.png" alt="no es posible cargar la imagen" width="200" height="200"
+                    class="img-dondec">
+                <p>Como dice en el cartel se especializan en pastas y pizzas, pero eso no quiere decir que no
+                    cuenten
+                    con
+                    distinta variedad. Verdaderamente se van a sorprender.</p>
 
-                </div>
-                <div class="lugares">
-                    <h3>Restaurant Vivanco | Gral. Bartolomé Mitre 74</h3>
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipNH1D6MFq-rkBxU0Xn1nmxoutBSfdbKATtGsqnF=w1080-h608-p-no-v0"
-                        width="200" , height="200" class="img-dondec">
-                    <p>Club de remo en Tigre, frente al río, mesas en la mansión y el jardín, gran parrilla envidriada
-                        en el parque, muy buena atención. Una excelente propuesta de almuerzos en día de semana, en
-                        vacaciones de invierno.</p>
+            </div>
+            <div class="lugares">
+                <h3>Celestino's | Av. Cazón 902</h3>
+                <img src="https://img.restaurantguru.com/re51-meals-Celestinos-2022-10-2.jpg" width="200" , height="200"
+                    class="img-dondec">
+                <p>Lindo restaurant con vistas a la calle, en esquina, para disfrutar con familia y parejas, la
+                    comida muy buena abundante y con variedad de menu.</p>
 
-                </div>
-                <div class="lugares">
-                    <h3>Tibuk Bistró | Sáenz Peña 1263</h3>
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/11/29/f0/c9/salon.jpg" width="200" ,
-                        height="200" , class="img-dondec">
-                    <p>Lugar bien ambientado, buena musica y volumen ideal para poder conversar. Con platos gourmet y
-                        los tragos bien preparados.</p>
+            </div>
+            <div class="lugares">
+                <h3>María Luján Ristorante | Av. Victorica 509</h3>
+                <img src="https://cdn0.casamientos.com.ar/vendor/7921/3_2/960/jpg/il-novo-37_7_67921-1560183571.webp"
+                    width="200" , height="200" class="img-dondec">
+                <p>Terraza al borde del rio con buena iluminación y embarcaciones bellas. Un precioso restaurant
+                    para disfrutar de una buena comida y unas bellas vistas.</p>
 
-                </div>
-                <div class="lugares">
-                    <h3>Gato Blanco | Barco desde Estación Fluvial Gral. Bartolomé Mitre 345</h3>
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/11/29/f0/c9/salon.jpg" width="200" ,
-                        height="200" , class="img-dondec">
-                    <p>Es un lugar con una vista increible, un jardín hermoso, la comida impecable y la carta muy buena.
-                        Clásicos platos de bodegón de Buenos Aires. Cuando se quiere pasar un día en Tigre, Gato Blanco
-                        se vuelve una excelente opción.</p>
+            </div>
+            <div class="lugares">
+                <h3>Restaurant Vivanco | Gral. Bartolomé Mitre 74</h3>
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNH1D6MFq-rkBxU0Xn1nmxoutBSfdbKATtGsqnF=w1080-h608-p-no-v0"
+                    width="200" , height="200" class="img-dondec">
+                <p>Club de remo en Tigre, frente al río, mesas en la mansión y el jardín, gran parrilla envidriada
+                    en el parque, muy buena atención. Una excelente propuesta de almuerzos en día de semana, en
+                    vacaciones de invierno.</p>
 
-                </div>
-                <div class="lugares">
-                    <h3>LA PROVE -Resto & Grill- | Montes de Oca 895</h3>
-                    <img src="/images/la proveeduria.png" width="200" , height="200" , class="img-dondec">
-                    <p>Si te gustan las parrilladas, o una buena comida que te llene tenés que venir a este restaurant
-                        que te va a sorprender con su variedad de comidas y delicias.</p>
+            </div>
+            <div class="lugares">
+                <h3>Tibuk Bistró | Sáenz Peña 1263</h3>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/11/29/f0/c9/salon.jpg" width="200" ,
+                    height="200" , class="img-dondec">
+                <p>Lugar bien ambientado, buena musica y volumen ideal para poder conversar. Con platos gourmet y
+                    los tragos bien preparados.</p>
 
-                </div>
-            </restaurante>
-            <br>
-            <h2 class="item tituloC">Confiterías</h2>
-            <br>
-            <confiterias class="item confiterias">
-                <div class="lugares">
-                    <h3>Bonafide | Av. Cazón 1401</h3>
-                    <img src="/images/bonafide.png" alt="no es posible cargar la imagen" width="200" height="200"
-                        class="img-dondec">
-                    <p>El mejor lugar para desayunar o merendar, con un café de muy buena calidad y buenísimas
-                        promociones de diversos acompañamientos dulces y salados</p>
-                </div>
-                <div class="lugares">
-                    <h3>La Moderna | Av. Cazón 1028</h3>
-                    <img src="/images/la moderna.png" alt="no es posible cargar la imagen" width="200" height="200"
-                        class="img-dondec">
-                    <p>Un lugar excelente para merendar, en esta confitería te podés encontrar con un ambiente cálido,
-                        familiero, con una excelente atención y un amplio menú.</p>
-                </div>
+            </div>
+            <div class="lugares">
+                <h3>Gato Blanco | Barco desde Estación Fluvial Gral. Bartolomé Mitre 345</h3>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/11/29/f0/c9/salon.jpg" width="200" ,
+                    height="200" , class="img-dondec">
+                <p>Es un lugar con una vista increible, un jardín hermoso, la comida impecable y la carta muy buena.
+                    Clásicos platos de bodegón de Buenos Aires. Cuando se quiere pasar un día en Tigre, Gato Blanco
+                    se vuelve una excelente opción.</p>
 
+            </div>
+            <div class="lugares">
+                <h3>LA PROVE -Resto & Grill- | Montes de Oca 895</h3>
+                <img src="/images/la proveeduria.png" width="200" , height="200" , class="img-dondec">
+                <p>Si te gustan las parrilladas, o una buena comida que te llene tenés que venir a este restaurant
+                    que te va a sorprender con su variedad de comidas y delicias.</p>
 
-            </confiterias>
-            <br>
-            <h2 class="item tituloH">Heladerías</h2>
-            <br>
-            <heladerias class="item heladerias">
-                <div class="lugares">
-
-                    <h3>Via Toscana Heladería Artesanal | Av. Victorica 470</h3>
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/03/b4/57/38/via-toscana-heladeria.jpg"
-                        width="200" , height="200" , class="img-dondec">
-                    <p>El lugar es sumamente exótico y único. Los helados son de muy buena calidad, uno encuentra el
-                        verdadero sabor de lo que pide. Con una gran trayectoria de mas de 40 años en la elaboriacion de
-                        helados artesanales.</p>
-                </div>
-                <div class="lugares">
-
-                    <h3>Helados ARAUCARIA | Sarmiento 420</h3>
-                    <img src="/images/heladeria araucaria.png" width="200" , height="200" , class="img-dondec">
-                    <p>Una magnífica heladería que también incluye otros tipos de postres como batidos, tortas, entre
-                        otras cosas.<br></p>
-                </div>
+            </div>
+        </restaurante>
+        
+        <div class="item tituloC" id="confiClick">Confiterías</div>
+        
+        <confiterias class="item confiterias" id="confiMenu">
+            <div class="lugares">
+                <h3>Bonafide | Av. Cazón 1401</h3>
+                <img src="/images/bonafide.png" alt="no es posible cargar la imagen" width="200" height="200"
+                    class="img-dondec">
+                <p>El mejor lugar para desayunar o merendar, con un café de muy buena calidad y buenísimas
+                    promociones de diversos acompañamientos dulces y salados</p>
+            </div>
+            <div class="lugares">
+                <h3>La Moderna | Av. Cazón 1028</h3>
+                <img src="/images/la moderna.png" alt="no es posible cargar la imagen" width="200" height="200"
+                    class="img-dondec">
+                <p>Un lugar excelente para merendar, en esta confitería te podés encontrar con un ambiente cálido,
+                    familiero, con una excelente atención y un amplio menú.</p>
+            </div>
 
 
+        </confiterias>
+        
+        <div class="item tituloH" id="helaClick">Heladerías</div>
+        <heladerias class="item heladerias" id="helaMenu">
+            <div class="lugares">
 
-            </heladerias>
-        </div>
-        <script src="/Javascript/hamburguesa.js"></script>
+                <h3>Via Toscana Heladería Artesanal | Av. Victorica 470</h3>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/03/b4/57/38/via-toscana-heladeria.jpg"
+                    width="200" , height="200" , class="img-dondec">
+                <p>El lugar es sumamente exótico y único. Los helados son de muy buena calidad, uno encuentra el
+                    verdadero sabor de lo que pide. Con una gran trayectoria de mas de 40 años en la elaboriacion de
+                    helados artesanales.</p>
+            </div>
+            <div class="lugares">
+
+                <h3>Helados ARAUCARIA | Sarmiento 420</h3>
+                <img src="/images/heladeria araucaria.png" width="200" , height="200" , class="img-dondec">
+                <p>Una magnífica heladería que también incluye otros tipos de postres como batidos, tortas, entre
+                    otras cosas.<br></p>
+            </div>
+
+
+
+        </heladerias>
+        <footer class="item footer">
+            <div class="footer-it"><a href="">
+                    <img src="/images/footer/facebook.png" alt="logo facebook" width="40"></a>
+            </div>
+            <div class="footer-it"><a href="">
+                    <img src="/images/footer/instagram.png" alt="logo instagram" width="40"></a>
+            </div>
+            <div class="footer-it"><a href="">
+                    <img src="/images/footer/gorjeo.png" alt="logo twiter" width="40"></a>
+            </div>
+            <div class="footer-it"><a href="">
+                    <img src="/images/footer/tik-tok.png" alt="logo tik-tok" width="40"></a>
+            </div>
+            <div class="footer-it"><a href="index.html">
+                    <img src="/images/iconos/hogar.png" alt="logo home" width="40"></a>
+            </div>
+        </footer>
+    </main>
+    <script src="/Javascript/hamburguesa.js"></script>
 </body>
 
 </html>

@@ -36,9 +36,10 @@ a {
     text-align: center;
 }
 .nav {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
+
+    align-items: center;
     grid-area: nav;
+    list-style: none;
     background-color: #CFFDE1;
     margin-top: 5px;
 
@@ -49,7 +50,15 @@ a {
 
 }
 
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 5px;
+}
+
 .nav-it {
+    text-decoration: none;
     padding: 20px;
     font-family: 'Cabin', sans-serif;
     font-size: 20px;
@@ -60,6 +69,20 @@ a {
 
 .nav-it:hover .text {
     opacity: 1;
+}
+
+.abrir-menu {
+    background-color: #CFFDE1;
+    border: 0;
+    display: none;
+
+}
+
+.cerrar-menu {
+    background-color: #CFFDE1;
+    border: 0;
+    display: none;
+
 }
 .select{
     grid-area: select;
