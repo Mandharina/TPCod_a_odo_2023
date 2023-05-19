@@ -95,6 +95,7 @@ button {
     background-color: #3D5656;
     width: 1px;
     left: 50%;
+    
 }
 
 .child{
@@ -102,6 +103,7 @@ button {
     margin: 20px;
     animation: backInUp;
     animation-duration: 1s ;
+    box-shadow: 0px 0px 11px 7px rgba(0,0,0,0.32);
    
 
 }
