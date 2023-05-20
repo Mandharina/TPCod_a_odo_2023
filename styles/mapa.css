@@ -1,25 +1,47 @@
+a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    text-shadow: 4px 4px 5px #0005;
+}
 
 
 .contenedor {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto auto auto/auto;
     grid-template-areas:
-        "titulo"
+        "header"
         "nav"
         "select"
-        "mapa";
+        "mapa"
+        "footer"
 }
 
-body {
+/*body {
     position: relative;
+}*/
+.header {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-area: header;
+    background-color: #FED049;
+    background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
+    align-items: center;
+
 }
 
+.header-title {
+    font-family: 'Zeyada', cursive;
+    font-size: 130px;
+    text-align: center;
+}
 .nav {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
+
+    align-items: center;
     grid-area: nav;
+    list-style: none;
     background-color: #CFFDE1;
-    margin-top: 60px;
+    margin-top: 5px;
 
 }
 
@@ -28,7 +50,15 @@ body {
 
 }
 
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 5px;
+}
+
 .nav-it {
+    text-decoration: none;
     padding: 20px;
     font-family: 'Cabin', sans-serif;
     font-size: 20px;
@@ -37,11 +67,37 @@ body {
 
 }
 
-.nav:hover .text {
+.nav-it:hover .text {
     opacity: 1;
+}
+
+.abrir-menu {
+    background-color: #CFFDE1;
+    border: 0;
+    display: none;
 
 }
 
+.cerrar-menu {
+    background-color: #CFFDE1;
+    border: 0;
+    display: none;
+
+}
+.select{
+    grid-area: select;
+    background-color: #3D5656;
+    padding: 10px;
+    margin-top: 5px;
+}
+#select-location{
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+}
+.frame{
+    background-color: #3D5656;
+    padding:20px;
+}
 #map{
     grid-area: mapa;
     height: 75vh;
@@ -50,14 +106,14 @@ body {
     grid-template-columns: 100%;
 }
 
-#select-location {
+/*#select-location {
     grid-area: mapa;
     left: 55px;
     top: 190px;
     position:absolute;
     z-index: 100;
     padding: 8px;
-}
+}*/
 
 .resto{
     background-color:#fdb98c ;
@@ -87,4 +143,21 @@ body {
     display: grid;
     grid-template-columns: 30% 70%;
    
+}
+.footer {
+    grid-area: footer;
+    background-color: #FED049;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+
+}
+
+.footer-it {
+    padding: 20px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+
 }

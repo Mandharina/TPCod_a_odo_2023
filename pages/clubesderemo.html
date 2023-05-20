@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,189 +8,101 @@
     <link rel="stylesheet" href="/styles/clubesderemo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href ="https://fomts.googleapis.com/css2?family=Zedaya&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href ="https://fomts.googleapis.com/css2?family=Cabin&display=swap">
-
-
-    <title>Turismo Tigre/Clubes De Remo</title>
-    <link rel="icon" href="logo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="/images/logo.ico">
+    <title>Turismo Tigre/Clubes de remo</title>
 </head>
+
 <body>
     <main class="contenedor">
         <header class="item header">
             <div class="header-logo">
-                <img src="/images/logo.png" width="200" alt="Logotipo de la página" style="padding: 30px;">
+                <img src="/images/logo.png" width="150" alt="Logotipo de la página" style="padding: 30px;">
             </div>
             <div class="header-title" style=" padding-top: 20px; line-height:120%;text-shadow: 4px 4px 5px #0005">
-                Clubes De Remo
+                Turismo Tigre
             </div>
         </header>
-
         <nav class=" item nav">
-            <div class="nav-it"><a href="historia.html">
-                <div class="text">Historia</div>
-                <img src="/images/historiaicono.png" alt="logo historia" width="40"></a>
-            </div>    
-            <div class="nav-it"><a href="quehacer.html">
-                <div class="text">Qué hacer</div>
-                <img src="/images/entretenimientoicono.png" alt="logo entretenimiento" width="40"></a>
-            </div>
-            <div class="nav-it"><a href="dondecomer.html">
-                <div class="text">Dónde comer</div>
-                <img src="/images/restauranteicono.png" alt="logo comer" width="40"></a>
-            </div>
-            <div class="nav-it"><a href="alojamientos.html">
-                <div class="text">Alojamientos</div>
-                <img src="/images/camaicono.png" alt="logo alojamiento" width="40"></a>
-            </div>
-            <div class="nav-it"><a href="mapa.html">
-                <div class="text">Clubes de Remo</div>
-                <img src="/images/remo.ico" alt="logo remo" width="40"></a>
-            </div>
-            <div class="nav-it"><a href="mapa.html">
-                <div class="text">Mapa</div>
-                <img src="/images/lugaricono.ico" alt="logo alojamiento" width="40"></a>
-            </div>
-           
+            <ul class="nav-list" id="navList">
+                <li class="nav-it"><a href="index.html">
+                        <div class="text">Inicio</div>
+                        <img src="/images/iconos/hogar.png" alt="logo home" width="40" id="img">
+                    </a>
+                </li>
+                <li class="nav-it"><a href="historia.html">
+                        <div class="text">Inicio</div>
+                        <img src="/images/iconos/historiaicono.png" alt="logo historia" width="40" id="img">
+                    </a>
+                </li>
+                <li class="nav-it"><a href="quehacer.html">
+                        <div class="text">Qué hacer</div>
+                        <img src="/images/iconos/entretenimientoicono.png" alt="logo entretenimiento" width="40">
+                    </a>
+                </li>
+                <li class="nav-it"><a href="dondecomer.html">
+                        <div class="text">Dónde comer</div>
+                        <img src="/images/iconos/restauranteicono.png" alt="logo comer" width="40">
+                    </a>
+                </li>
+                <li class="nav-it"><a href="alojamientos.html">
+                        <div class="text">Alojamientos</div>
+                        <img src="/images/iconos/camaicono.png" alt="logo alojamiento" width="40">
+                    </a>
+                </li>
+                <li class="nav-it"><a href="mapa.html">
+                        <div class="text">Mapa</div>
+                        <img src="/images/iconos/maps.png" alt="logo alojamiento" width="40">
+                    </a>
+                </li>
+            </ul>
         </nav>
-    
-        <section class="section">
-         <h1>Tigre, cuna del remo argentino</h1>
-         <p>Muchos clubes nacieron con la ciudad y son producto de la inmigración que marcó a la Argentina.
-             Esta historia común se inició allá por 1870, cuando un grupo de jóvenes aficionados realizó
-              un recorrido que unió el puerto de Buenos Aires con la ciudad de Tigre. Al año siguiente se
-               corrió una regata amistosa por el río Luján, considerada la vía más apta para este deporte. 
-               Y el 10 de diciembre de 1873 se corrió en estas mismas aguas la primera regata oficial del país.
+        <div class="subtitle">
+            <h2>Tigre, cuna del remo argentino</h2>
+            <p>Muchos clubes nacieron con la ciudad y son producto de la inmigración que marcó a la Argentina.
+                Esta historia común se inició allá por 1870, cuando un grupo de jóvenes aficionados realizó
+                un recorrido que unió el puerto de Buenos Aires con la ciudad de Tigre. Al año siguiente se
+                corrió una regata amistosa por el río Luján, considerada la vía más apta para este deporte.
+                Y el 10 de diciembre de 1873 se corrió en estas mismas aguas la primera regata oficial del país.
                 Ese mismo año se fundó el Buenos Aires Rowing Club, decano del deporte náutico, y la actividad
-                 siguió creciendo en los años subsiguientes, con el aporte de las colectividades inglesa, española,
-                  francesa, nórdicas, italiana y otras, que con sus clubes poblaron las riberas de los ríos Luján y 
-                  Tigre y engalanaron lo que hoy es el Paseo Lavalle-Victorica.
+                siguió creciendo en los años subsiguientes, con el aporte de las colectividades inglesa, española,
+                francesa, nórdicas, italiana y otras, que con sus clubes poblaron las riberas de los ríos Luján y
+                Tigre y engalanaron lo que hoy es el Paseo Lavalle-Victorica.
 
-            El municipio de Tigre, basándose en las características particulares del lugar privilegiado por su naturaleza, se convirtió en centro de miniturismo y cuna del remo argentino, tal como fue designada en 1973. Hoy la mitad de los eventos organizados por la Asociación Argentina de Remo tienen sede en suelo tigrense y los últimos campeones olímpicos que tuvo el país, Tranquilo Capozzo y Eduardo Guerrero, pertenecieron al Club Canottieri Italiani y al Club de Regatas La Marina.
-            
-            Por sus clubes de remo y toda su arquitectura ribereña, Tigre es candidata a recibir la distinción de "Patrimonio Mundial" de la UNESCO. </p>
-         
-            
+                El municipio de Tigre, basándose en las características particulares del lugar privilegiado por su
+                naturaleza, se convirtió en centro de miniturismo y cuna del remo argentino, tal como fue designada en
+                1973. Hoy la mitad de los eventos organizados por la Asociación Argentina de Remo tienen sede en suelo
+                tigrense y los últimos campeones olímpicos que tuvo el país, Tranquilo Capozzo y Eduardo Guerrero,
+                pertenecieron al Club Canottieri Italiani y al Club de Regatas La Marina.
+
+                Por sus clubes de remo y toda su arquitectura ribereña, Tigre es candidata a recibir la distinción de
+                "Patrimonio Mundial" de la UNESCO. </p>
+
+        </div>
+        <section class="section">
+            <div id="timeline"></div>
         </section>
-
-        <article class="item article">
-            <div class="nota">
-                <h2 style="text-shadow: 4px 4px 5px #0005;"">Club de Regatas La Marina</h2>
-                <div><img src="/images/crlm.jpg"
-                    alt="Club de Regatas La Marina" width="200", height="200" class="img-nota-left">
-                </div>
-                <div>Ubicado sobre el Río Luján, frente a Paseo Victorica y Colón. Fundado el 18 de julio de 1876,
-                     esta legendaria y prestigiosa institución del remo argentino posee más de 1.700 regatas 
-                     ganadas. En 2014 el edificio, obra del arquitecto Bernardo Fontán, fue declarado Monumento 
-                     Histórico Nacional.
-
-                </div>
+        <footer class="item footer">
+            <div class="footer-it"><a href="">
+                    <img src="/images/footer/facebook.png" alt="logo facebook" width="40"></a>
             </div>
-            <div class="nota">
-                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;" >Club Canottieri Italiani</h2>
-                <div><img src="/images/canottieri.jpg"
-                    alt="Club Canottieri Italiani" width="200", height="200" class="img-nota-right">
-                </div>
-                <div>Ubicado en Mitre 74, a orillas del Río Tigre. Característico por su estilo veneciano, precursor
-                     en la difusión del remo como deporte en la República Argentina. Desde su fundación es un centro 
-                     de práctica deportiva para toda la familia. Se fundó el 1 de enero de 1910. En 1952 los remeros 
-                     del club, Eduardo Guerrero y Tranquilo Capozzo conquistaron la primera medalla dorada olímpica
-                      en Helsinki para el remo argentino.</div>
+            <div class="footer-it"><a href="">
+                    <img src="/images/footer/instagram.png" alt="logo instagram" width="40"></a>
             </div>
-            <div class="nota">
-                <h2 style="text-shadow: 4px 4px 5px #0005;" ">Rowing Club Argentino</h2>
-                <div><img src="/images/rowingclubargentino.jpg"
-                    alt="Rowing Club Argentino" width="200", height="200" class="img-nota-left">
-                </div>
-                <div>Ubicado en Lavalle 235, a orillas del Río Luján. El club fue fundado por descendientes de
-                     británicos, escoceses y belgas que decidieron unir la cultura criolla con las de otros lugares
-                      de Europa. El 6 de mayo de 1906 fue inaugurado el primer local social de dos plantas. El 11 de 
-                      noviembre de 1908, el Rowing Club Argentino debutó en regatas oficiales.
-
-                </div> 
+            <div class="footer-it"><a href="">
+                    <img src="/images/footer/gorjeo.png" alt="logo twiter" width="40"></a>
             </div>
-            <div class="nota">
-                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;"">Buenos Aires Rowing Club</h2>
-                <div><img src="/images/bsasrowingclub.jpg"
-                    alt="Bs As Rowing Club" width="200", height="200", class="img-nota-right">
-                </div>
-                <div>Ubicado en Mitre 226, frente al Río Tigre. Fundado el 16 de diciembre de 1873 e instalado en Tigre desde
-                     principios de siglo, cuenta con un predio de 8.000 m2, mientras que su edificio de estilo Tudor, del año
-                      1916, es de 3.000 m2. En sus galpones para botes, contienen más de 200 embarcaciones para la práctica del
-                       remo o del canotaje. Acumulando más de 1.000 triunfos en regatas de alta competencia.</div>
-            </div>
-            <div class="nota">
-                <h2 style="text-shadow: 4px 4px 5px #0005;" >Tigre Boat Club</h2>
-                <div> <img src="/images/tbc.jpg"
-                    alt="Tigre Boat Club" width="200", height="200", class="img-nota-left">
-                </div>
-                <div>Ubicado en Lavalle 235, a orillas del Río Luján. Fundado en Buenos Aires el 17 de julio de 1888, el edificio
-                     principal perteneció a la familia Doldz, que la había construido en 1870 y que en 1910 fue comprada por el club. 
-                     Actualmente cuenta con todo lo necesario para la práctica del remo incluidos unos 70 botes de paseo y competición.
-
-                </div>
-            </div>
-            <div class="nota">
-                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;">Club Suizo de Buenos Aires</h2>
-                <div><img src="/images/Club-Suizo.jpg"
-                    alt="Club Suizo" width="200", height= "200", class="img-nota-right">
-                </div>
-                <div>Ubicado en Lavalle 115, sobre el Río Tigre. El club fue fundado el 17 de mayo de 1913 por una comunidad 
-                    de ciudadanos suizos residentes en la Argentina. Durante los años 1925 y 1926 se construyeron la rampa y el
-                     galpón de botes, y comenzó la edificación de las canchas de tenis.</div>
-            </div>
-            <div class="nota">
-                <h2 style="text-shadow: 4px 4px 5px #0005;" >Club de Regatas América</h2>
-                <div> <img src="/images/regatasamerica.jpg"
-                    alt="Club de Regatas América" width="200", height="200", class="img-nota-left">
-                </div>
-                <div>Ubicado en Lavalle 167, sobre el Río Tigre. Fundado el 30 de julio de 1920. El edificio actual fue modificado
-                     e inaugurado en 1932. Su actividad principal es la práctica del remo tanto de competencia como de paseo.
-                      Posee 3 escuelas: remo para adultos, para jóvenes y niños, y remo travesía.
-
-                </div>
-            </div>
-            <div class="nota">
-                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;">Club de Regatas L'Aviron</h2>
-                <div><img src="/images/Club-Laviron-e1669662886817.jpg"
-                    alt="Club L'Aviron" width="200", height= "200", class="img-nota-right">
-                </div>
-                <div>Ubicado en Ayacucho 971, a orillas del Río Tigre. Fundado el 13 de octubre de 1920 por integrantes 
-                    de la colectividad francesa, belga y suiza. En 1923 consiguieron el terreno donde se construyó el 
-                    edificio actual, obra del arquitecto Feliciano Durand. La institución participa a nivel federativo de
-                     las competencias de remo, siendo sede del calendario de remo de travesía.
-                </div>
-            </div>
-            <div class="nota">
-                <h2 style="text-shadow: 4px 4px 5px #0005;" >Club de Regatas Hispano-Argentino</h2>
-                <div> <img src="/images/clubhispanoarg.jpg"
-                    alt="Club Hispano-Argentino" width="200", height="200", class="img-nota-left">
-                </div>
-                <div>Ubicado en Paseo Victorica 50, a orillas del Río Luján. Fundado el 10 de abril de 1913, 
-                    con la idea de crear una entidad formada por españoles y argentinos para fomentar la práctica 
-                    del remo. Fue la primera institución deportiva que ganó una Regata Femenina, en 1926.
-
-                </div>
-            </div>
-            <div class="nota">
-                <h2 style="text-align: end; text-shadow: 4px 4px 5px #0005;">Club de Remeros Escandinavos</h2>
-                <div><img src="/images/clubderemerosescand.jpg"
-                    alt="Club de Remeros Escandinavos" width="200", height= "200", class="img-nota-right">
-                </div>
-                <div>Ubicado en Túpac Amaru 1046, sobre la desembocadura del Río Reconquista sobre el río Luján. 
-                    El Club de Remeros Escandinavos fue fundado por noruegos, suecos, finlandeses y daneses
-                     el 26 de octubre de 1912. Su primera sede fue en un pequeño Club House sobre Paseo Victorica, 
-                     en los ‘60 se mudo a una sede ubicada en la desembocadura del río de Las Conchas y el río Luján. 
-                     Finalmente, en 2007 trasladan su sede a la otra orilla del río Luján.</div>
+            <div class="footer-it"><a href="">
+                    <img src="/images/footer/tik-tok.png" alt="logo tik-tok" width="40"></a>
             </div>
 
-
-        </article>
-        <footer class="footer" 
         </footer>
-      </main>      
-            
+    </main>
+    <script src="/Javascript/clubes.js"></script>
 </body>
+
 </html>

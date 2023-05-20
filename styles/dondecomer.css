@@ -1,15 +1,23 @@
+a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    text-shadow: 4px 4px 5px #0005;
+}
 .contenedor {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template: auto auto  auto auto auto auto auto  auto auto auto/auto;
     grid-template-areas:
-        "titulo titulo"
-        "nav nav"
-        "tituloR tituloR"
-        "restaurante restaurante"
-        "tituloC tituloC"
-        "confiterias confiterias"
-        "tituloH tituloH"
-        "heladerias heladerias";
+        "header"
+        "nav"
+        "subtitle"
+        "tituloR"
+        "restaurante"
+        "tituloC"
+        "confiterias"
+        "tituloH"
+        "heladerias"
+        "footer";
 }
 .titulo{
     display:grid;
@@ -25,6 +33,21 @@
     line-height: 120%;
     text-shadow: 4px 4px 5px #0005;
  
+}
+.header {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-area: header;
+    background-color: #FED049;
+    background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
+    align-items: center;
+
+}
+
+.header-title {
+    font-family: 'Zeyada', cursive;
+    font-size: 130px;
+    text-align: center;
 }
 .nav {
     
@@ -71,6 +94,18 @@
     display: none;
     
 }
+.subtitle {
+    grid-area: subtitle;
+    font-size: xx-large;
+    background-color: #68B984;
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+    line-height: 120%;
+    text-shadow: 4px 4px 5px #fff;
+    margin-top: 5px;
+    padding-left: 20px;
+
+}
 .lugares{
     font-family: 'Cabin', sans-serif;
     text-align: justify;
@@ -83,13 +118,18 @@
 .tituloR {
    
     font-family: 'Cabin', sans-serif;
-    text-align:justify;
+    text-align:center;
     background-color: #CFFDE1;
+    font-size:xx-large;
     grid-area: tituloR;
     padding: 10px;
     margin:5px;
-   
+    cursor:pointer;   
 }
+.tituloR:hover{
+    box-shadow: 0 0 15px 0 rgba(159, 157, 7, 0.96) inset, 0 0 15px 6px rgba(2, 51, 14, 0.899);
+}
+
 .restaurante {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -97,17 +137,21 @@
     background-color: #3D5656;
     padding: 10px;
     margin-top: 5px;
-   
+    display:none;   
 }
+
 .tituloC {
    
     font-family: 'Cabin', sans-serif;
-    text-align:justify;
+    text-align:center;
     background-color: #CFFDE1;
+    font-size: xx-large;
     grid-area: tituloC;
     padding: 10px;
     margin:5px;
-    
+}
+.tituloC:hover{
+    box-shadow: 0 0 15px 0 rgba(159, 157, 7, 0.96) inset, 0 0 15px 6px rgba(2, 51, 14, 0.899);
 }
 .confiterias{
     display: grid;
@@ -116,17 +160,21 @@
     background-color: #3D5656;
     padding: 10px;
     margin-top: 5px;
-  
+    display: none;  
 }
 .tituloH {
    
     font-family: 'Cabin', sans-serif;
-    text-align:justify;
+    text-align:center;
     background-color: #CFFDE1;
+    font-size: xx-large;
     grid-area: tituloH;
     padding: 10px;
     margin:5px;
   
+}
+.tituloH:hover{
+    box-shadow: 0 0 15px 0 rgba(159, 157, 7, 0.96) inset, 0 0 15px 6px rgba(2, 51, 14, 0.899);
 }
 .heladerias{
     display: grid;
@@ -135,6 +183,7 @@
     background-color: #3D5656;
     padding: 10px;
     margin-top: 5px;
+    display: none;
    
 }
 .img-dondec{
@@ -143,19 +192,41 @@
     border-radius: 7%;
 
 }  
+.visible{
+    display: grid;
+}
+.footer {
+    grid-area: footer;
+    background-color: #FED049;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
 
+}
+
+.footer-it {
+    padding: 20px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+
+}
 @media screen and (max-width: 900px){
 	.contenedor {
         grid-template-columns: auto;
 		grid-template-areas:
-        "titulo"
+        "header"
         "nav"
+        "subtitle"
         "tituloR"
         "restaurante"
         "tituloC"
         "confiterias"
         "tituloH"
-        "heladerias";
+        "heladerias"
+        "footer";
 	}
     .titulo{
         display: grid;
@@ -224,6 +295,7 @@
         background-color: #3D5656;
         padding: 10px;
         margin-top: 5px;
+        display: none;
     }
     .tituloC {
        
@@ -242,6 +314,7 @@
         background-color: #3D5656;
         padding: 10px;
         margin-top: 5px;
+        display: none;
       
     }
     .tituloH {
@@ -261,7 +334,11 @@
         background-color: #3D5656;
         padding: 10px;
         margin-top: 5px;
+        display: none;
        
+    }
+    .visible{
+        display: grid;
     }
     .img-dondec{
         float:auto; 

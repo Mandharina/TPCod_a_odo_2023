@@ -1,3 +1,4 @@
+
 a {
     text-decoration: none;
     color: black;
@@ -23,8 +24,8 @@ button {
         "header header"
         "nav nav"
         "slider slider"
-        "article article"  
-        "section section"      
+        "article article"
+        "section section"
         "footer footer";
 
 
@@ -32,10 +33,11 @@ button {
 
 .header {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 10% 90%;
     grid-area: header;
     background-color: #FED049;
     background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
+    align-items: center;
 
 }
 
@@ -44,11 +46,11 @@ button {
     font-size: 130px;
     text-align: center;
 }
-
 .nav {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
+
+    align-items: center;
     grid-area: nav;
+    list-style: none;
     background-color: #CFFDE1;
     margin-top: 5px;
 
@@ -59,7 +61,15 @@ button {
 
 }
 
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 5px;
+}
+
 .nav-it {
+    text-decoration: none;
     padding: 20px;
     font-family: 'Cabin', sans-serif;
     font-size: 20px;
@@ -71,26 +81,30 @@ button {
 .nav-it:hover .text {
     opacity: 1;
 }
-.slider-marco{
+
+.slider-marco {
     background-color: #3D5656;
-    padding:0;
+    padding: 0;
     margin-top: 5px;
     grid-area: slider;
     width: 100%;
     height: auto;
     overflow: hidden;
-    
+
 }
+
 .slider-marco ul {
     display: flex;
     width: 300%;
     padding: 0px;
     animation: slide 15s infinite;
 }
-.slider-marco li{
+
+.slider-marco li {
     list-style: none;
 }
-.img{
+
+.img {
     width: 100%;
 }
 
@@ -99,7 +113,7 @@ button {
     grid-template-columns: auto auto;
     grid-area: article;
     background-color: #3D5656;
-    padding: 10px;
+    padding: 5px;
     margin-top: 5px;
 }
 
@@ -112,10 +126,11 @@ button {
     border-radius: 1%;
 }
 
-.img-nota-left {
+.img-nota {
     float: left;
     padding: 10px;
     border-radius: 7%;
+    float: left;
 
 
 }
@@ -185,13 +200,12 @@ button {
     grid-area: footer;
     background-color: #FED049;
     margin-top: 5px;
-<<<<<<< HEAD
-    text-align: center;
-=======
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
-        
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+
 }
+
 .footer-it {
     padding: 20px;
     font-family: 'Cabin', sans-serif;
@@ -199,7 +213,6 @@ button {
     text-align: center;
 
 
->>>>>>> a9c1d1ff76bdcb31d8ac931fde225f54a45d1b6c
 }
 
 /*de aqui en adelante codigo para hacer la pagina responsiva*/
@@ -210,13 +223,13 @@ button {
         grid-area: header;
         background-color: #FED049;
         background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
-    
+
     }
 
     .header-logo {
         display: none;
     }
-    
+
 
     .article {
         display: grid;
@@ -235,19 +248,20 @@ button {
         grid-area: header;
         background-color: #FED049;
         background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
-    
+
     }
 
     .header-logo {
         display: none;
     }
+
     .nav {
         display: grid;
         grid-template: auto auto auto auto / auto auto;
         grid-area: nav;
         background-color: #CFFDE1;
         margin-top: 5px;
-    
+
     }
 
     .article {
@@ -260,34 +274,46 @@ button {
     }
 
     .img-nota-left {
-        width: 100%;         
+        width: 100%;
         border-radius: 7%;
         padding: 0;
         margin-left: auto;
         margin-right: auto
-    
-    
     }
-    
+
     .img-nota-right {
-        width: 100%;         
+        width: 100%;
         border-radius: 7%;
         padding: 0;
         margin-left: auto;
         margin-right: auto
-    
     }
 
 }
 
 @keyframes slide {
-    0% {margin-left: 0%;}
-    20%{margin-left: 0%;}
+    0% {
+        margin-left: 0%;
+    }
 
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
+    20% {
+        margin-left: 0%;
+    }
 
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-   
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
 }
