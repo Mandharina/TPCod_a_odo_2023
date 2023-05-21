@@ -315,7 +315,7 @@ button {
         margin-right: auto
     }
 
-
+}
 
 @keyframes slide {
     0% {
@@ -342,4 +342,4 @@ button {
         margin-left: -200%;
     }
 
-}}
+}
