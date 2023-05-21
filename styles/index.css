@@ -214,9 +214,11 @@ button {
     grid-area: footer;
     background-color: #FED049;
     margin-top: 5px;
+    margin-bottom: 10px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     align-items: center;
+
 
 }
 
@@ -228,6 +230,14 @@ button {
 
 
 }
+
+.copyright {
+    align-items: center;
+    text-align: center;
+    text-shadow:0.5px 1px 0.5px #CFFDE1
+    
+}
+
 
 /*de aqui en adelante codigo para hacer la pagina responsiva*/
 @media screen and (max-width:992px) {
