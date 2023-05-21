@@ -1,9 +1,9 @@
 body {
-    background-image: url(images/tigre-buenos-aires.jpg);
+    background-image: url(/images/tigre-buenos-aires.jpg);
     background-size:cover;
-    
 
-    .header {
+}
+.header {
         display: grid;
         grid-template-columns: 30% 70%;
         grid-area: header;
@@ -12,13 +12,13 @@ body {
     
     }
     
-    .header-title {
+.header-title {
         font-family: 'Zeyada', cursive;
         font-size: 130px;
         text-align: center;
     }
 
-}
+
     
     #wrap { margin:0 auto 0 auto;
             width:500px;

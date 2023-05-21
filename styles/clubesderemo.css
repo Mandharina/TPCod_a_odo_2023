@@ -187,27 +187,7 @@ button {
     padding:10px;
     
 }
-/*ANIMACIÓN TIMELINE
-.visible{
-    opacity: 1;
-    animation: ver 1s cubic-bezier(.99,-.7,2,1.9);
 
-}
-.invisible{
-    opacity: 0;
-    animation: noVer 1s cubic-bezier(.99,-.7,2,1.9);
-
-}
-@keyframes _visible {
-    0%{transform: translateY(500px);opacity: 0;}
-    100%{transform: translateY(0);opacity: 1;}
-    
-}
-@keyframes _invisible {
-    0%{transform: translateY(0);opacity: 1;}
-    100%{transform: translateY(500px);opacity: 0;}
-    
-}*/
 
 .footer {
     grid-area: footer;
