@@ -82,6 +82,20 @@ button {
     opacity: 1;
 }
 
+.abrir-menu {
+    background-color: #CFFDE1;
+    border: 0;
+    display: none;
+
+}
+
+.cerrar-menu {
+    background-color: #CFFDE1;
+    border: 0;
+    display: none;
+
+}
+
 .slider-marco {
     background-color: #3D5656;
     padding: 0;
@@ -216,52 +230,64 @@ button {
 }
 
 /*de aqui en adelante codigo para hacer la pagina responsiva*/
-@media screen and (max-width:720px) {
-    .header {
-        display: grid;
-        grid-template-columns: 0% 100%;
-        grid-area: header;
-        background-color: #FED049;
-        background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
+@media screen and (max-width:992px) {
+    .contenedor {
+        grid-template: auto auto auto auto auto/ auto;
+        grid-template-areas:
+        "header"
+        "nav"
+        "slider"
+        "article"
+        "section"
+        "footer";
 
     }
-
-    .header-logo {
-        display: none;
-    }
-
-
-    .article {
+    .titulo{
         display: grid;
-        grid-template-columns: auto;
-        grid-area: article;
-        background-color: #3D5656;
+        grid-area: titulo;
+        background: linear-gradient(90deg, rgba(254,208,73,1) 0%, rgba(185,140,8,1) 100%);
+        font-family: 'Zeyada', cursive;
+        font-size: 70px;
         padding: 10px;
-        margin-top: 5px;
-    }
-}
-
-@media screen and (max-width:480px) {
-    .header {
-        display: grid;
-        grid-template-columns: 0% 100%;
-        grid-area: header;
-        background-color: #FED049;
-        background: linear-gradient(90deg, rgba(254, 208, 73, 1) 0%, rgba(185, 140, 8, 1) 100%);
-
+        text-align: right;
+        line-height: 120%;
+        text-shadow: 4px 4px 5px #0005;
+        margin: 5px;
+        grid-template-columns: 30% 70%;
+       
     }
 
-    .header-logo {
+    .abrir-menu {
+        display: block;
+        right: 0;
+        align-items: end;
+    }
+
+    .cerrar-menu.visible {
+        display: block;
+    }
+
+    .abrir-menu.invisible {
         display: none;
     }
 
     .nav {
-        display: grid;
-        grid-template: auto auto auto auto / auto auto;
-        grid-area: nav;
-        background-color: #CFFDE1;
-        margin-top: 5px;
 
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-list.visible {
+        display: block;
+        flex-direction: column;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .article {
@@ -289,7 +315,7 @@ button {
         margin-right: auto
     }
 
-}
+
 
 @keyframes slide {
     0% {
@@ -316,4 +342,4 @@ button {
         margin-left: -200%;
     }
 
-}
+}}

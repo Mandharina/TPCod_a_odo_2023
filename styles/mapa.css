@@ -161,3 +161,62 @@ a {
 
 
 }
+@media screen and (max-width:992px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: auto auto auto auto/auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "select"
+            "mapa"
+            "footer"
+    }
+    .titulo{
+        display: grid;
+        grid-area: titulo;
+        background: linear-gradient(90deg, rgba(254,208,73,1) 0%, rgba(185,140,8,1) 100%);
+        font-family: 'Zeyada', cursive;
+        font-size: 70px;
+        padding: 10px;
+        text-align: right;
+        line-height: 120%;
+        text-shadow: 4px 4px 5px #0005;
+        margin: 5px;
+        grid-template-columns: 30% 70%;
+       
+    }
+    /*.abrir-menu {
+        display: block;
+        right: 0;
+        align-items: end;
+    }
+
+    .cerrar-menu.visible {
+        display: block;
+    }
+
+    .abrir-menu.invisible {
+        display: none;
+    }
+
+    .nav {
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list {
+        display: non;
+    }
+
+    .nav-list.visible {
+        display: block;
+        flex-direction: column;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+    }*/
+  
+}
