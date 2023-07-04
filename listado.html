@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Productos</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+
+<body>
+    <h1>Listado de Proveedores</h1>
+    <h3>Ojo x ojo 2023</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Propietario</th>
+                <th>Dirección</th>
+                <th>Rubro</th>
+            </tr>
+        </thead>
+        <tbody id="tablaProveedores">
+        </tbody>
+    </table>
+
+    <div class="contenedor-centrado">
+        <a href="proveedores.html">Menu principal</a>
+    </div>
+
+    <script>
+        //const URL = "http://127.0.0.1:5000/"
+        const URL = "http://marcelaroig.pythonanywhere.com/"
+
+        // Realizamos la solicitud GET al servidor para obtener todos los productos
+        fetch(URL + 'proveedores')
+            .then(function (response) {
+                if (response.ok) {
+                    return response.json(); // Parseamos la respuesta JSON
+                } else {
+                    // Si hubo un error, lanzar explícitamente una excepción
+                    // para ser "catcheada" más adelante
+                    throw new Error('1Error al obtener los productos.');
+                }
+            })
+            .then(function (data) {
+                var tablaProveedores = document.getElementById('tablaProveedores');
+
+                // Iteramos sobre los productos y agregamos filas a la tabla
+                data.forEach(function (proveedor) {
+                    var fila = document.createElement('tr');
+                    fila.innerHTML = '<td>' + proveedor.codigo + '</td>' +
+                        '<td>' + proveedor.nombre + '</td>' +
+                        '<td>' + proveedor.propietario + '</td>' +
+                        '<td>' + proveedor.direccion + '</td>'+
+                        '<td>' + proveedor.rubro;
+                    tablaProveedores.appendChild(fila);
+                });
+            })
+            .catch(function (error) {
+                // Código para manejar errores
+                alert('2Error al obtener los productos.');
+            });
+    </script>
+</body>
+</html>
