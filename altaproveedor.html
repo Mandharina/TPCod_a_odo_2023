@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+<body>
+    <h1>Agregar Productos al Inventario</h1>
+    <h3>Codo a Codo 2023</h3>
+    <form id="formulario">
+        <label for="codigo">Código:</label>
+        <input type="text" id="codigo" name="codigo" required><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="propietario">Propietario:</label>
+        <input type="text" id="propietario" name="propietario" required><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required><br>
+
+        <label for="rubro">Rubro:</label>
+        <input type="text" id="rubro" name="rubro" required><br>
+
+        <button type="submit">Agregar Proveedor</button>
+        <a href="proveedores.html">Menu principal</a>
+    </form>
+
+    <script>
+        //const URL = "http://127.0.0.1:5000/"
+        const URL = "http://marcelaroig.pythonanywhere.com/"
+        // Capturamos el evento de envío del formulario
+        document.getElementById('formulario').addEventListener('submit', function (event) {
+            event.preventDefault(); // Evitamos que se envie el form por ahora
+
+            // Obtenemos los valores del formulario
+            var codigo = document.getElementById('codigo').value;
+            var nombre = document.getElementById('nombre').value;
+            var propietario = document.getElementById('propietario').value;
+            var direccion = document.getElementById('direccion').value;
+            var rubro = document.getElementById('rubro').value;
+
+            // Creamos un objeto con los datos del producto
+            var proveedor = {
+                codigo: codigo,
+                nombre: nombre,
+                propietario: propietario,
+                direccion: direccion,
+                rubro: rubro
+            };
+            console.log(proveedor)
+            // Realizamos la solicitud POST al servidor
+            fetch(URL + 'proveedores', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(proveedor)
+            })
+                .then(function (response) {
+                    // Código para manejar la respuesta
+                    if (response.ok) {
+                        return response.json(); // Parseamos la respuesta JSON
+                    } else {
+                        // Si hubo un error, lanzar explícitamente una excepción
+                        // para ser "catcheada" más adelante
+                        throw new Error('1 Error al agregar el proveedor.');
+                    }
+                })
+                .then(function (data) {
+                    alert('Proveedor agregado correctamente.');
+                    //Limpiamos el formulario.
+                    document.getElementById('codigo').value = "";
+                    document.getElementById('nombre').value = "";
+                    document.getElementById('propietario').value = "";
+                    document.getElementById('direccion').value = "";
+                    document.getElementById('rubro').value = "";
+                })
+                .catch(function (error) {
+                    // Código para manejar errores
+                    alert('2Error al agregar el proveedor.');
+                });
+        })
+    </script>
+</body>
+</html>

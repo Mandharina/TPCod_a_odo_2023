@@ -19,13 +19,14 @@ button {
 **/
 .contenedor {
     display: grid;
-    grid-template: auto auto auto auto auto / auto auto;
+    grid-template: auto auto auto auto auto auto / auto auto;
     grid-template-areas:
         "header header"
         "nav nav"
         "slider slider"
         "article article"
         "section section"
+        "prov prov"
         "footer footer";
 
 
@@ -208,6 +209,20 @@ button {
 
 
   }
+
+.prov {
+    grid-area: prov;
+    background-color:#3D5656;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size:xx-large;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 5px;
+    cursor: pointer;
+
+}
 
 
 .footer {
